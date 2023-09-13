@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
-import "./index.css";
+import "./App.css";
 import Landing from "./pages/Landing";
 import Products from "./pages/Products";
 import Programs from "./pages/Programs";
@@ -10,6 +10,7 @@ import Partner from "./pages/Partner";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
+import NavBar from "./components/AppBar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -49,6 +50,7 @@ function Index() {
     <React.StrictMode>
       <RouterProvider router={router} />
       <CssBaseline />
+      <NavBar />
     </React.StrictMode>
   );
 }
