@@ -1,5 +1,6 @@
 import logo from "../resources/logonew.png";
 import * as React from "react";
+import "../App.css";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
