@@ -99,9 +99,10 @@ export default function NavBar() {
               display: { xs: "flex", md: "none" },
               // mr: 1,
               me: "auto",
+              mr: { md: 0, xs: 2 },
             }}
           />
-          <Typography
+          {/* <Typography
             variant="h5"
             noWrap
             component="a"
@@ -118,7 +119,7 @@ export default function NavBar() {
             }}
           >
             C-Nava
-          </Typography>
+          </Typography> */}
           <Box
             textAlign="center"
             justifyContent="center"
