@@ -54,7 +54,20 @@ export default function NavBar() {
             C-Nava
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            component="img"
+            src={logo}
+            sx={{
+              width: "70px",
+              display: { xs: "flex", md: "none" },
+              ml: 3,
+              // mr: { md: 0, xs: 2 },
+            }}
+          />
+          <Box
+            justifyContent="flex-end"
+            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, mr: 3 }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -89,37 +102,32 @@ export default function NavBar() {
                   </Typography>
                 </MenuItem>
               ))}
+              <Box>
+                <Button
+                  sx={{
+                    textTransform: "none",
+                    mx: 2,
+                    mb: 2,
+                  }}
+                  variant="outlined"
+                >
+                  Parner With Us
+                </Button>
+                <br />
+                <Button
+                  sx={{
+                    textTransform: "none",
+                    mx: 2,
+                    mb: 1,
+                  }}
+                  variant="contained"
+                >
+                  Apply Now
+                </Button>
+              </Box>
             </Menu>
           </Box>
-          <Box
-            component="img"
-            src={logo}
-            sx={{
-              width: "70px",
-              display: { xs: "flex", md: "none" },
-              // mr: 1,
-              me: "auto",
-              mr: { md: 0, xs: 2 },
-            }}
-          />
-          {/* <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              textDecoration: "none",
-              color: "black",
-            }}
-          >
-            C-Nava
-          </Typography> */}
+
           <Box
             textAlign="center"
             justifyContent="center"
@@ -144,7 +152,7 @@ export default function NavBar() {
                 >
                   {page}
                 </Button>
-                <Box sx={{ flexGrow: 0, display: { md: "none", xs: "flex" } }}>
+                {/* <Box sx={{ flexGrow: 0, display: { md: "none", xs: "flex" } }}>
                   <Button
                     sx={{
                       textTransform: "none",
@@ -165,7 +173,7 @@ export default function NavBar() {
                   >
                     Apply Now
                   </Button>
-                </Box>
+                </Box> */}
               </>
             ))}
           </Box>

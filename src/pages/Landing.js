@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, Button } from "@mui/material";
+import { Box, Grid, Typography, Button, Card } from "@mui/material";
 import "../App.css";
 import React from "react";
 import girl from "../resources/girl1.png";
@@ -6,7 +6,7 @@ import draft from "../resources/bulb.png";
 import pic from "../resources/student1.png";
 import swirl from "../resources/swirl.png";
 import swirl2 from "../resources/swirl2.png";
-import boy from "../resources/boy.png";
+import boy from "../resources/afric.jpg";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 
 export default function Landing() {
@@ -147,6 +147,7 @@ export default function Landing() {
       <Box
         sx={{
           color: "#303030",
+          bgcolor: "#fefefe",
           pt: { md: 15, xs: 5 },
           px: { md: 15, xs: 2 },
         }}
@@ -154,6 +155,94 @@ export default function Landing() {
         <Typography variant="h2" sx={{ fontWeight: 500, textAlign: "center" }}>
           Advance Your <span style={{ color: "#0A77C1" }}>Career</span> With Our
           Vast Paths
+        </Typography>
+        <Grid
+          container
+          columnSpacing={2}
+          justifyContent="center"
+          paddingTop={7}
+        >
+          <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+            <Card sx={{ p: 5, color: "f4f4f4" }}>
+              <Typography sx={{ pb: 2 }}>Software Engineering</Typography>
+              <Typography>
+                Our mission is simple: to provide the guidance and resources
+                necessary to help our participants navigate their career paths
+                effectively. We understand that the journey to a successful
+                career can be challenging, but with the right support and
+                practical experience, it becomes achievable for everyone.
+              </Typography>
+              <Button>
+                Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+              </Button>
+            </Card>
+          </Grid>
+          <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+            <Card sx={{ p: 5 }}>
+              <Typography sx={{ pb: 2 }}>Front-End Development</Typography>
+              <Typography>
+                Our mission is simple: to provide the guidance and resources
+                necessary to help our participants navigate their career paths
+                effectively. We understand that the journey to a successful
+                career can be challenging, but with the right support and
+                practical experience, it becomes achievable for everyone.
+              </Typography>
+            </Card>
+          </Grid>
+          <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+            <Card sx={{ p: 5 }}>
+              <Typography sx={{ pb: 2 }}>Back-End Development</Typography>
+              <Typography>
+                Our mission is simple: to provide the guidance and resources
+                necessary to help our participants navigate their career paths
+                effectively. We understand that the journey to a successful
+                career can be challenging, but with the right support and
+                practical experience, it becomes achievable for everyone.
+              </Typography>
+            </Card>
+          </Grid>
+          <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+            <Card sx={{ p: 5 }}>
+              <Typography sx={{ pb: 2 }}>Technical Writing</Typography>
+              <Typography>
+                Our mission is simple: to provide the guidance and resources
+                necessary to help our participants navigate their career paths
+                effectively. We understand that the journey to a successful
+                career can be challenging, but with the right support and
+                practical experience, it becomes achievable for everyone.
+              </Typography>
+            </Card>
+          </Grid>
+          <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+            <Card sx={{ p: 5 }}>
+              <Typography sx={{ pb: 2 }}>Ui/Ux </Typography>
+              <Typography>
+                Our mission is simple: to provide the guidance and resources
+                necessary to help our participants navigate their career paths
+                effectively. We understand that the journey to a successful
+                career can be challenging, but with the right support and
+                practical experience, it becomes achievable for everyone.
+              </Typography>
+            </Card>
+          </Grid>
+        </Grid>
+        <Box justifyContent="center" display="flex" sx={{ pt: 5 }}>
+          <Button variant="outlined">
+            Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />{" "}
+          </Button>
+        </Box>
+      </Box>
+
+      {/*  */}
+      <Box
+        sx={{
+          color: "#303030",
+          pt: { md: 15, xs: 5 },
+          px: { md: 15, xs: 2 },
+        }}
+      >
+        <Typography variant="h2" sx={{ fontWeight: 500, textAlign: "center" }}>
+          Why Join The <span style={{ color: "#0A77C1" }}>Programme ?</span>
         </Typography>
         <Box
           sx={{
@@ -172,8 +261,8 @@ export default function Landing() {
           />
         </Box>
 
-        <Grid container columnSpacing={4}>
-          <Grid item md={6} xs={12} sx={{ mt: { md: 15, xs: 3 } }}>
+        <Grid container columnSpacing={4} sx={{ pt: 5 }}>
+          <Grid item md={6} xs={12}>
             <Box
               component="img"
               src={draft}
@@ -216,7 +305,7 @@ export default function Landing() {
             <Box
               component="img"
               src={boy}
-              sx={{ width: { md: "400px", xs: "100%" } }}
+              sx={{ width: { md: "100%", xs: "100%" } }}
             />
           </Grid>
         </Grid>
