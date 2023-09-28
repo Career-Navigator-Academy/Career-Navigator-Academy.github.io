@@ -28,7 +28,10 @@ export default function NavBar() {
     <nav>
       <Container
         maxWidth="xl"
-        sx={{ mt: { md: 4, xs: 0 }, px: { md: 17, xs: 0 } }}
+        sx={{
+          pt: { md: 2, xs: 0 },
+          px: { md: 17, xs: 0 },
+        }}
       >
         <Toolbar disableGutters>
           <Box
