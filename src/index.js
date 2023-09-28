@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
-import "./index.css";
+import "./App.css";
 import Landing from "./pages/Landing";
 import Products from "./pages/Products";
 import Programs from "./pages/Programs";
@@ -10,33 +10,34 @@ import Partner from "./pages/Partner";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
+import NavBar from "./components/AppBar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 function Index() {
-  const router = createHashRouter([
+  const router = createBrowserRouter([
     {
       path: "/",
       element: <Landing />,
     },
     {
-      path: "/about",
+      path: "/products",
       element: <Products />,
     },
     {
-      path: "/project",
+      path: "/programs",
       element: <Programs />,
     },
     {
-      path: "/contact",
+      path: "/partner",
       element: <Partner />,
     },
     {
-      path: "/resume",
+      path: "/resources",
       element: <Resources />,
     },
     {
-      path: "/resume",
+      path: "/contact",
       element: <Contact />,
     },
     {
@@ -47,8 +48,9 @@ function Index() {
 
   return (
     <React.StrictMode>
-      <RouterProvider router={router} />
       <CssBaseline />
+      <NavBar />
+      <RouterProvider router={router} />
     </React.StrictMode>
   );
 }
