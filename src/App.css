@@ -68,8 +68,16 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
   color: #2e65d4 !important;
 }
 
+.btn {
+  text-transform: none !important;
+  padding-top: 3px;
+  background-color: #EEEFEF !important;
+  color: #06080d !important;
+}
+
 .card {
   height: 280px;
+  background-color: #f0f1fc !important;
 }
 
 @media (max-width: 992px) {
@@ -108,3 +116,79 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
   border-radius: 50%;
   padding: 10px;
 }
+
+.footer {
+  background: #667db6;  
+  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
+ position: relative;
+}
+
+/* Product Page */
+
+/* .pp {
+  background: #4CA1AF; 
+  background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF); 
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF); 
+} */
+
+.div{
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.div:before,
+.div:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.div:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.div:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+/* 404 */
+

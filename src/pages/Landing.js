@@ -89,12 +89,10 @@ export default function Landing() {
           </Grid>
         </Grid>
       </Box>
-      {/* Second Section */}
       <About />
       <Paths />
       <Join />
       <Ready />
-      {/* Third Section */}
     </Box>
   );
 }

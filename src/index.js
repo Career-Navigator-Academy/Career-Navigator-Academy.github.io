@@ -11,6 +11,8 @@ import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
 import NavBar from "./components/AppBar";
+import BottomNav from "./components/Footer";
+import Enroll from "./pages/Enroll";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -41,6 +43,10 @@ function Index() {
       element: <Contact />,
     },
     {
+      path: "/apply",
+      element: <Enroll />,
+    },
+    {
       path: "*",
       element: <PageNotFound />,
     },
@@ -51,6 +57,7 @@ function Index() {
       <CssBaseline />
       <NavBar />
       <RouterProvider router={router} />
+      <BottomNav />
     </React.StrictMode>
   );
 }
