@@ -11,8 +11,6 @@ import {
   Grid,
 } from "@mui/material";
 
-const careerOptions = ["Front End", "Back End", "UI/UX", "Technical Writing"];
-
 const Enroll = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -40,11 +38,11 @@ const Enroll = () => {
   };
 
   return (
-    <Box sx={{ px: 25, py: 15 }}>
+    <Box sx={{ px: { md: 25, xs: 2 }, py: { md: 15, xs: 5 }, mb: 10 }}>
       <Typography variant="h4">Application Form</Typography>
       <Box onSubmit={handleSubmit} component="form">
         <Grid container columnSpacing={4}>
-          <Grid item md={6} sx={{ p: 2 }}>
+          <Grid item md={6} xs={12} sx={{ p: 2 }}>
             <TextField
               label="Name"
               variant="outlined"
@@ -55,7 +53,7 @@ const Enroll = () => {
               required
             />
           </Grid>
-          <Grid item md={6} sx={{ p: 2 }}>
+          <Grid item md={6} xs={12} sx={{ p: 2 }}>
             <TextField
               label="Email"
               variant="outlined"
@@ -67,7 +65,7 @@ const Enroll = () => {
               required
             />
           </Grid>
-          <Grid item md={4} sx={{ p: 2 }}>
+          <Grid item md={4} xs={12} sx={{ p: 2 }}>
             <TextField
               label="Phone Number"
               variant="outlined"
@@ -78,7 +76,7 @@ const Enroll = () => {
               required
             />
           </Grid>
-          <Grid item md={4} sx={{ p: 2 }}>
+          <Grid item md={4} xs={12} sx={{ p: 2 }}>
             <TextField
               label="Age"
               variant="outlined"
@@ -90,7 +88,7 @@ const Enroll = () => {
               required
             />
           </Grid>
-          <Grid item md={4} sx={{ p: 2 }}>
+          <Grid item md={4} xs={12} sx={{ p: 2 }}>
             <FormControl fullWidth variant="outlined">
               <InputLabel>Gender</InputLabel>
               <Select
@@ -106,24 +104,24 @@ const Enroll = () => {
               </Select>
             </FormControl>
           </Grid>
-          <Grid item md={6} sx={{ p: 2 }}>
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Career Path</InputLabel>
+          <Grid item md={6} xs={12} sx={{ p: 2 }}>
+            <FormControl fullWidth variant="outlined">
+              <InputLabel>Career Path</InputLabel>
               <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
+                required
+                name="career"
                 value={formData.career}
-                label="Age"
+                label="Career Path"
                 onChange={handleChange}
               >
-                <MenuItem value={10}>Front-End Development</MenuItem>
-                <MenuItem value={20}>Back-End Development</MenuItem>
-                <MenuItem value={30}>Technical Writing</MenuItem>
-                <MenuItem value={30}>UI/UX</MenuItem>
+                <MenuItem value="frontend">Front-End Development</MenuItem>
+                <MenuItem value="backend">Back-End Development</MenuItem>
+                <MenuItem value="technical writing">Technical Writing</MenuItem>
+                <MenuItem value="UI/UX">UI/UX</MenuItem>
               </Select>
             </FormControl>
           </Grid>
-          <Grid item md={6} sx={{ p: 2 }}>
+          <Grid item md={6} xs={12} sx={{ p: 2 }}>
             <TextField
               label="How did you hear about us?"
               variant="outlined"
@@ -135,7 +133,7 @@ const Enroll = () => {
             />
           </Grid>
 
-          <Grid item md={12} sx={{ p: 2 }}>
+          <Grid item md={12} xs={12} sx={{ p: 2 }}>
             <TextField
               label="Why should we accept you into the program?"
               variant="outlined"

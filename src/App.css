@@ -30,6 +30,16 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
   
 }
 
+.progs {
+  background: #667db6;  
+background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
+background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
+
+/* background-image: url(../src/resources/blob.svg);
+background-repeat: no-repeat;
+background-size: cover; */
+}
+
 .why{
   background-image: url(./resources/christina.jpg);
   background-size: cover;
@@ -118,10 +128,8 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
 }
 
 .footer {
-  background: #667db6;  
-  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
-  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
- position: relative;
+  background: #000000;  
+  color: #ECE9E6;
 }
 
 /* Product Page */

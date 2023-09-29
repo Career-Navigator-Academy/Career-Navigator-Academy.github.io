@@ -61,7 +61,11 @@ export default function BottomNav() {
             Newsletter
           </Typography>
           <Box>
-            <TextField label="Subcribe" variant="outlined" sx={{ pr: 1 }} />
+            <TextField
+              label="Subcribe"
+              variant="outlined"
+              sx={{ pr: 1, color: "#fff" }}
+            />
             <Button variant="contained">Subscribe</Button>
           </Box>
         </Grid>
