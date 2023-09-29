@@ -76,10 +76,15 @@ export default function Programs() {
         </Grid>
       </Box>
 
-      <Box sx={{ pt: { md: 10, xs: 2 } }} className="progs">
+      <Box sx={{ pt: { md: 10, xs: 7 } }} className="progs">
         <Typography
           variant="h2"
-          sx={{ fontWeight: 500, textAlign: "center", mb: 5 }}
+          sx={{
+            fontWeight: 500,
+            textAlign: "center",
+            mb: { md: 5, xs: 3 },
+            px: { md: 0, xs: 1 },
+          }}
         >
           Our{" "}
           <span
@@ -95,7 +100,7 @@ export default function Programs() {
           container
           alignItems="center"
           columnSpacing={4}
-          sx={{ py: 7, px: 10 }}
+          sx={{ py: 7, px: { md: 10, xs: 3 } }}
         >
           <Grid item md={6} justifyContent="center" display="center">
             <Box
@@ -133,7 +138,7 @@ export default function Programs() {
                   p: 1,
                 }}
                 variant="contained"
-                className="contained"
+                className="containedlight"
               >
                 Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
               </Button>

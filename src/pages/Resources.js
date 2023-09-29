@@ -24,7 +24,7 @@ export default function Resources() {
             sx={{ width: "100%" }}
           />
           <Typography variant="body2">September 29th 2023</Typography>
-          <a href="#">
+          <a href="/">
             <Typography variant="h6">
               Getting started with JavaScript libraries and frame works: lesson
               1
@@ -40,7 +40,7 @@ export default function Resources() {
             sx={{ width: "100%" }}
           />
           <Typography variant="body2">September 29th 2023</Typography>
-          <a href="#">
+          <a href="/">
             <Typography variant="h6">
               Getting started with JavaScript libraries and frame works: lesson
               1
