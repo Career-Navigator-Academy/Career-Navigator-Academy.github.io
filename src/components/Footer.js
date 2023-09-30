@@ -1,75 +1,136 @@
-import { Box, Grid, Typography, Button } from "@mui/material";
-import TextField from "@mui/material/TextField";
-import * as React from "react";
-import "../App.css";
+import React from "react";
+import logo from "../resources/logonew.png";
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
+import { styled } from "@mui/system";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { Box, Button, Grid, TextField } from "@mui/material";
 
-export default function BottomNav() {
+const FooterContainer = styled("footer")({
+  backgroundColor: "#3f51b5",
+  color: "#fff",
+  padding: "20px",
+  textAlign: "center",
+});
+
+const SocialIconButton = styled(IconButton)({
+  fontSize: "30px",
+  margin: "15px",
+});
+
+const BottomNav = () => {
   return (
     <Box
       className="footer"
-      component="footer"
-      sx={{
-        px: 5,
-        py: 10,
-      }}
+      sx={{ mt: { md: 15, xs: 7 }, mb: 5, mx: { md: 15, xs: 1 } }}
+      justifyContent="center"
+      textAlign={{ md: "initial", xs: "center" }}
     >
-      <Grid
-        container
-        justifyContent="center"
-        display="flex"
-        alignContent="center"
-      >
-        <Grid item md={3} xs={12}>
-          <Typography variant="h5" sx={{ fontWeight: 500, py: 1 }}>
-            Links
-          </Typography>
-          <Box>
-            <Typography variant="bod2">About</Typography> <br />
-            <Typography variant="bod2">Products</Typography> <br />
-            <Typography variant="bod2">Resouces</Typography> <br />
-            <Typography variant="bod2">Programs</Typography> <br />
-            <Typography variant="bod2">Contact</Typography> <br />
-          </Box>
-        </Grid>
-        <Grid item md={3} xs={12}>
-          <Typography variant="h5" sx={{ fontWeight: 500, py: 1 }}>
-            Resources
-          </Typography>
-          <Box>
-            <Typography variant="bod2">Blogs</Typography> <br />
-            <Typography variant="bod2">Courses</Typography> <br />
-            <Typography variant="bod2">News</Typography> <br />
-            <Typography variant="bod2">Articles</Typography> <br />
-          </Box>
-        </Grid>
-        <Grid item md={3} xs={12}>
-          <Typography variant="h5" sx={{ fontWeight: 500, py: 1 }}>
-            Join Us
-          </Typography>
-          <Box>
-            <Button className="btn" variant="outlined" sx={{ mb: 2 }}>
-              Join Us
-            </Button>
+      <Divider sx={{ mx: { md: 7, xs: 2 } }} orientation="horizontal" />
+
+      <Box>
+        <Grid container sx={{ py: 4, px: { md: 7, xs: 2 } }}>
+          <Grid item xs={12} md={3} sx={{ mb: { md: 0, xs: 3 } }}>
+            <Box component="img" src={logo} sx={{ width: "70px" }} />
+            <Typography
+              justifyContent={{ md: "initial", xs: "center" }}
+              sx={{ pr: { md: 15, xs: 0 } }}
+              variant="body2"
+            >
+              Your career journey starts here.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={3} sx={{ mb: { md: 0, xs: 3 } }}>
+            <Typography sx={{ color: "#303030" }} variant="p">
+              Quick Links
+            </Typography>{" "}
             <br />
-            <Button className="btn" variant="outlined">
-              Partner with Us
-            </Button>
-          </Box>
-        </Grid>
-        <Grid item md={3} xs={12}>
-          <Typography variant="h5" sx={{ fontWeight: 500, py: 1 }}>
-            Newsletter
-          </Typography>
-          <Box>
-            <TextField
-              label="Subcribe"
-              variant="outlined"
-              sx={{ pr: 1, color: "#fff" }}
+            <Typography
+              sx={{ textDecoration: "none", color: "#383838" }}
+              component="a"
+              href="/"
+              variant="body2"
+            >
+              Programs
+            </Typography>{" "}
+            <br />
+            <Typography
+              sx={{ textDecoration: "none", color: "#383838" }}
+              component="a"
+              href="/"
+              variant="body2"
+            >
+              Resources
+            </Typography>{" "}
+            <br />
+            <Typography
+              sx={{ textDecoration: "none", color: "#383838" }}
+              component="a"
+              href="/"
+              variant="body2"
+            >
+              Contact
+            </Typography>
+          </Grid>
+
+          <Grid item xs={12} md={3} sx={{ mb: { md: 0, xs: 3 } }}>
+            <Typography sx={{ color: "#303030" }} variant="p">
+              Follow Us
+            </Typography>{" "}
+            <br />
+            <FontAwesomeIcon
+              style={{ fontSize: "20px", margin: "5px" }}
+              icon={faFacebook}
             />
-            <Button variant="contained">Subscribe</Button>
-          </Box>
+            <FontAwesomeIcon
+              icon={faTwitter}
+              style={{ fontSize: "20px", margin: "5px" }}
+            />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              style={{ fontSize: "20px", margin: "5px" }}
+            />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              style={{ fontSize: "20px", margin: "5px" }}
+            />
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <TextField
+              helperText="Subscribe to our newsletter"
+              label="Enter your email"
+              variant="outlined"
+              name="subscribe"
+              required
+              fullWidth
+            />
+            <Button sx={{ m: 1 }} variant="contained">
+              Subscribe
+            </Button>
+          </Grid>
         </Grid>
-      </Grid>
+        <Divider sx={{ mx: { md: 7, xs: 2 } }} orientation="horizontal" />
+        <Box
+          textAlign="center"
+          sx={{
+            pt: 2,
+            display: "flex",
+            justifyContent: "center",
+            alignContent: "center",
+          }}
+        >
+          <Typography variant="p">2023 Career Navigator Academy</Typography>
+        </Box>
+      </Box>
     </Box>
   );
-}
+};
+
+export default BottomNav;
