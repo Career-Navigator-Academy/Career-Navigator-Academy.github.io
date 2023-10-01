@@ -59,7 +59,12 @@ export default function Join() {
               display="flex"
               sx={{ pt: 5 }}
             >
-              <Button variant="contained" className="containedlight">
+              <Button
+                component="a"
+                href="/apply"
+                variant="contained"
+                className="containedlight"
+              >
                 Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />{" "}
               </Button>
             </Box>
@@ -69,10 +74,11 @@ export default function Join() {
             md={8}
             display="flex"
             align="center"
-            sx={{ zIndex: 1, mt: { md: 0, xs: 7 } }}
+            justifyContent="center"
+            sx={{ zIndex: 1, pt: { md: 0, xs: 7 } }}
           >
             <Grid container>
-              <Grid md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     01
@@ -85,7 +91,7 @@ export default function Join() {
                   Acquire valuable skills and knowledge from mentors.
                 </Typography>
               </Grid>
-              <Grid md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     02
@@ -98,7 +104,7 @@ export default function Join() {
                   Expand your professional network through connections.
                 </Typography>
               </Grid>
-              <Grid md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     03
@@ -113,7 +119,7 @@ export default function Join() {
                 </Typography>
               </Grid>
 
-              <Grid md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     04
@@ -127,7 +133,7 @@ export default function Join() {
                   make informed decisions and avoid common pitfalls.
                 </Typography>
               </Grid>
-              <Grid md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     05
@@ -141,7 +147,7 @@ export default function Join() {
                   improvement and track your progress.
                 </Typography>
               </Grid>
-              <Grid md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     07
@@ -150,7 +156,7 @@ export default function Join() {
                 <Typography variant="h6" sx={{ py: 2 }}>
                   Job Opportunities
                 </Typography>
-                <Typography variant={{ md: "body2", xs: "p" }}>
+                <Typography variant="p">
                   Mentors may recommend you for job openings or introduce you to
                   potential employers.
                 </Typography>

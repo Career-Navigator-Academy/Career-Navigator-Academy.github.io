@@ -20,7 +20,7 @@ export default function Landing() {
           display="flex"
           container
           sx={{ px: { md: 5, xs: 3 } }}
-          columnSpacing={{ md: 0, xs: 0 }}
+          columnSpacing={{ md: 2, xs: 0 }}
         >
           <Grid item md={4} xs={12}>
             <Box
@@ -82,6 +82,8 @@ export default function Landing() {
                 }}
                 variant="contained"
                 className="contained"
+                component="a"
+                href="/apply"
               >
                 Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
               </Button>
@@ -89,12 +91,10 @@ export default function Landing() {
           </Grid>
         </Grid>
       </Box>
-      {/* Second Section */}
       <About />
       <Paths />
       <Join />
       <Ready />
-      {/* Third Section */}
     </Box>
   );
 }

@@ -11,8 +11,6 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Products", "Programs", "Resources", "Contact"];
-
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -64,7 +62,6 @@ export default function NavBar() {
               width: "70px",
               display: { xs: "flex", md: "none" },
               ml: 3,
-              // mr: { md: 0, xs: 2 },
             }}
           />
           <Box
@@ -98,15 +95,25 @@ export default function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ color: "black" }} textAlign="center">
-                    {page}
-                  </Typography>
-                </MenuItem>
-              ))}
+              {["Products", "Programs", "Resources", "Contact"].map(
+                (page, index) => (
+                  <MenuItem key={index} onClick={handleCloseNavMenu}>
+                    <a
+                      href={`/${page}`}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <Typography sx={{ color: "black" }} textAlign="center">
+                        {page}
+                      </Typography>
+                    </a>
+                  </MenuItem>
+                )
+              )}
+
               <Box>
                 <Button
+                  component="a"
+                  href="/partner"
                   sx={{
                     textTransform: "none",
                     mx: 2,
@@ -114,10 +121,12 @@ export default function NavBar() {
                   }}
                   variant="outlined"
                 >
-                  Parner With Us
+                  Partner With Us
                 </Button>
                 <br />
                 <Button
+                  component="a"
+                  href="/apply"
                   sx={{
                     textTransform: "none",
                     mx: 2,
@@ -140,49 +149,35 @@ export default function NavBar() {
               ms: "auto",
             }}
           >
-            {pages.map((page) => (
-              <>
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{
-                    my: 2,
-                    mr: { md: 5, xs: 0 },
-                    color: "black",
-                    display: "block",
-                    textTransform: "none",
-                  }}
+            {["Products", "Programs", "Resources", "Contact"].map(
+              (page, index) => (
+                <a
+                  key={index}
+                  href={`/${page}`}
+                  style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  {page}
-                </Button>
-                {/* <Box sx={{ flexGrow: 0, display: { md: "none", xs: "flex" } }}>
                   <Button
+                    key={page}
+                    onClick={handleCloseNavMenu}
                     sx={{
+                      my: 2,
+                      mr: { md: 5, xs: 0 },
+                      color: "black",
+                      display: "block",
                       textTransform: "none",
-                      p: { md: 1, xs: 1 },
-                      mr: { md: 3, xs: 1 },
                     }}
-                    variant="outlined"
                   >
-                    Parner With Us
+                    {page}
                   </Button>
-                  <Button
-                    sx={{
-                      textTransform: "none",
-                      p: { md: 1, xs: 1 },
-                      mr: { md: 3, xs: 0 },
-                    }}
-                    variant="contained"
-                  >
-                    Apply Now
-                  </Button>
-                </Box> */}
-              </>
-            ))}
+                </a>
+              )
+            )}
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { md: "block", xs: "none" } }}>
             <Button
+              component="a"
+              href="/partner"
               sx={{
                 textTransform: "none",
                 p: { md: 1, xs: 1 },
@@ -193,6 +188,8 @@ export default function NavBar() {
               Parner With Us
             </Button>
             <Button
+              component="a"
+              href="/apply"
               sx={{
                 textTransform: "none",
                 p: { md: 1, xs: 1 },

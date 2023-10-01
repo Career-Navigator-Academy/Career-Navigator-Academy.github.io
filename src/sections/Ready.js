@@ -23,14 +23,19 @@ export default function Ready() {
       </Box>
       <Typography
         variant="h6"
-        sx={{ py: 2 }}
+        sx={{ py: 2, textAlign: "center" }}
         justifyContent="center"
         display="flex"
       >
         Join the community of other amazing like minded people
       </Typography>
       <Box justifyContent="center" display="flex">
-        <Button variant="contained" className="contained">
+        <Button
+          component="a"
+          href="/apply"
+          variant="contained"
+          className="contained"
+        >
           Join Us Now
         </Button>
       </Box>

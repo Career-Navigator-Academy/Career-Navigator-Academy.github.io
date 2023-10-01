@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
 import "./App.css";
 import Landing from "./pages/Landing";
@@ -11,48 +11,29 @@ import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
 import NavBar from "./components/AppBar";
+import BottomNav from "./components/Footer";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-function Index() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Landing />,
-    },
-    {
-      path: "/products",
-      element: <Products />,
-    },
-    {
-      path: "/programs",
-      element: <Programs />,
-    },
-    {
-      path: "/partner",
-      element: <Partner />,
-    },
-    {
-      path: "/resources",
-      element: <Resources />,
-    },
-    {
-      path: "/contact",
-      element: <Contact />,
-    },
-    {
-      path: "*",
-      element: <PageNotFound />,
-    },
-  ]);
-
+function App() {
   return (
     <React.StrictMode>
       <CssBaseline />
       <NavBar />
-      <RouterProvider router={router} />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/programs" element={<Programs />} />
+        <Route path="/partner" element={<Partner />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+      <BottomNav />
     </React.StrictMode>
   );
 }
 
-root.render(<Index />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
