@@ -52,6 +52,8 @@ export default function PageNotFound() {
           </Box>
           <Box sx={{ ml: { md: 10, xs: 2 }, mt: { md: 5, xs: 2 } }}>
             <Button
+              component="a"
+              href="/"
               sx={{
                 textTransform: "none",
                 p: 1,

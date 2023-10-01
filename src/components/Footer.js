@@ -112,7 +112,12 @@ const BottomNav = () => {
             alignContent: "center",
           }}
         >
-          <Typography component="a" href="/" variant="p">
+          <Typography
+            sx={{ textDecoration: "none", color: "#383838" }}
+            component="a"
+            href="/"
+            variant="p"
+          >
             2023 Career Navigator Academy
           </Typography>
         </Box>

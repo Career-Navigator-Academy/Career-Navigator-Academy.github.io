@@ -74,7 +74,8 @@ export default function Join() {
             md={8}
             display="flex"
             align="center"
-            sx={{ zIndex: 1, mt: { md: 0, xs: 7 } }}
+            justifyContent="center"
+            sx={{ zIndex: 1, pt: { md: 0, xs: 7 } }}
           >
             <Grid container>
               <Grid item md={4} sx={{ p: 2 }} className="cardtext">

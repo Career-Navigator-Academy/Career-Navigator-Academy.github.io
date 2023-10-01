@@ -20,7 +20,7 @@ export default function Landing() {
           display="flex"
           container
           sx={{ px: { md: 5, xs: 3 } }}
-          columnSpacing={{ md: 0, xs: 0 }}
+          columnSpacing={{ md: 2, xs: 0 }}
         >
           <Grid item md={4} xs={12}>
             <Box

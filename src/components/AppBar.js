@@ -95,18 +95,21 @@ export default function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {["Products", "Programs", "Resources", "Contact"].map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <a
-                    href={`/${page}`}
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
-                    <Typography sx={{ color: "black" }} textAlign="center">
-                      {page}
-                    </Typography>
-                  </a>
-                </MenuItem>
-              ))}
+              {["Products", "Programs", "Resources", "Contact"].map(
+                (page, index) => (
+                  <MenuItem key={index} onClick={handleCloseNavMenu}>
+                    <a
+                      href={`/${page}`}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <Typography sx={{ color: "black" }} textAlign="center">
+                        {page}
+                      </Typography>
+                    </a>
+                  </MenuItem>
+                )
+              )}
+
               <Box>
                 <Button
                   component="a"
@@ -146,9 +149,10 @@ export default function NavBar() {
               ms: "auto",
             }}
           >
-            {["Products", "Programs", "Resources", "Contact"].map((page) => (
-              <>
+            {["Products", "Programs", "Resources", "Contact"].map(
+              (page, index) => (
                 <a
+                  key={index}
                   href={`/${page}`}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
@@ -166,8 +170,8 @@ export default function NavBar() {
                     {page}
                   </Button>
                 </a>
-              </>
-            ))}
+              )
+            )}
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { md: "block", xs: "none" } }}>
