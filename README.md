@@ -1,9 +1,12 @@
 # Career-Navigator-Academy.github.io
 
-The Unofficial Web Platform For Career Navigator Academy
+Welcome to the Career Navigator Academy website repository!
 
-### To Get Started
+### Getting Started
 
-`yarn install`
+To begin, follow these simple steps:
 
-`yarn start`
+1. Install the necessary dependencies with `yarn install`.
+2. Start the project by running `yarn start`.
+
+This project is open source and we warmly welcome contributions from the community. Feel free to contribute and help us make Career Navigator Academy even better!
