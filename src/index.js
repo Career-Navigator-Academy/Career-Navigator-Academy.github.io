@@ -10,6 +10,7 @@ import Partner from "./pages/Partner";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
+import Enroll from "./pages/Enroll";
 import NavBar from "./components/AppBar";
 import BottomNav from "./components/Footer";
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/programs" element={<Programs />} />
         <Route path="/partner" element={<Partner />} />
+        <Route path="/apply" element={<Enroll />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<PageNotFound />} />
