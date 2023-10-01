@@ -25,7 +25,7 @@ export default function Paths() {
               developing, testing, and maintaining software applications and
               systems.
             </Typography>
-            <Button className="containedblack">
+            <Button component="a" href="/apply" className="containedblack">
               Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
             </Button>
           </Card>
@@ -38,7 +38,7 @@ export default function Paths() {
               development," is the practice of creating the user interface and
               user experience of a website or web application.
             </Typography>
-            <Button className="containedblack">
+            <Button component="a" href="/apply" className="containedblack">
               Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
             </Button>
           </Card>
@@ -52,7 +52,7 @@ export default function Paths() {
               and infrastructure to make the front-end user interface work
               seamlessly.
             </Typography>
-            <Button className="containedblack">
+            <Button component="a" href="/apply" className="containedblack">
               Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
             </Button>
           </Card>
@@ -65,7 +65,7 @@ export default function Paths() {
               technical information for easy understanding by non-experts, often
               used in manuals, reports, and guides across different industries.
             </Typography>
-            <Button className="containedblack">
+            <Button component="a" href="/apply" className="containedblack">
               Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
             </Button>
           </Card>
@@ -78,7 +78,7 @@ export default function Paths() {
               while UX (User Experience) focuses on optimizing the overall user
               interaction and satisfaction with the product.
             </Typography>
-            <Button className="containedblack">
+            <Button component="a" href="/apply" className="containedblack">
               Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
             </Button>
           </Card>

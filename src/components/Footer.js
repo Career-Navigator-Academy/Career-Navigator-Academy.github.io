@@ -2,8 +2,6 @@ import React from "react";
 import logo from "../resources/logonew.png";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import { styled } from "@mui/system";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -12,18 +10,6 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, Button, Grid, TextField } from "@mui/material";
-
-const FooterContainer = styled("footer")({
-  backgroundColor: "#3f51b5",
-  color: "#fff",
-  padding: "20px",
-  textAlign: "center",
-});
-
-const SocialIconButton = styled(IconButton)({
-  fontSize: "30px",
-  margin: "15px",
-});
 
 const BottomNav = () => {
   return (
@@ -55,7 +41,7 @@ const BottomNav = () => {
             <Typography
               sx={{ textDecoration: "none", color: "#383838" }}
               component="a"
-              href="/"
+              href="/programs"
               variant="body2"
             >
               Programs
@@ -64,7 +50,7 @@ const BottomNav = () => {
             <Typography
               sx={{ textDecoration: "none", color: "#383838" }}
               component="a"
-              href="/"
+              href="/resources"
               variant="body2"
             >
               Resources
@@ -73,7 +59,7 @@ const BottomNav = () => {
             <Typography
               sx={{ textDecoration: "none", color: "#383838" }}
               component="a"
-              href="/"
+              href="/contact"
               variant="body2"
             >
               Contact
@@ -126,7 +112,9 @@ const BottomNav = () => {
             alignContent: "center",
           }}
         >
-          <Typography variant="p">2023 Career Navigator Academy</Typography>
+          <Typography component="a" href="/" variant="p">
+            2023 Career Navigator Academy
+          </Typography>
         </Box>
       </Box>
     </Box>

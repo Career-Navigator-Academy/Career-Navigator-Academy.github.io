@@ -49,6 +49,8 @@ export default function Programs() {
             </Box>
             <Box sx={{ ml: { md: 10, xs: 0 }, mt: { md: 5, xs: 2 } }}>
               <Button
+                component="a"
+                href="/apply"
                 sx={{
                   textTransform: "none",
                   p: 1,
@@ -133,6 +135,8 @@ export default function Programs() {
             </Typography>
             <Box sx={{ ml: { md: 0, xs: 0 }, mt: { md: 5, xs: 2 } }}>
               <Button
+                component="a"
+                href="/apply"
                 sx={{
                   textTransform: "none",
                   p: 1,

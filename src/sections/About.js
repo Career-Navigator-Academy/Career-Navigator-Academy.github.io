@@ -124,6 +124,8 @@ export default function About() {
 
         <Box sx={{ mt: { md: 0, xs: 2 } }}>
           <Button
+            component="a"
+            href="/apply"
             sx={{
               p: 1,
             }}
@@ -244,6 +246,8 @@ export default function About() {
 
         <Box sx={{ mt: { md: 5, xs: 2 } }}>
           <Button
+            component="a"
+            href="/apply"
             sx={{
               p: 1,
             }}

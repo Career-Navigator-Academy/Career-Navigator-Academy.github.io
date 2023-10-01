@@ -59,7 +59,12 @@ export default function Join() {
               display="flex"
               sx={{ pt: 5 }}
             >
-              <Button variant="contained" className="containedlight">
+              <Button
+                component="a"
+                href="/apply"
+                variant="contained"
+                className="containedlight"
+              >
                 Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />{" "}
               </Button>
             </Box>

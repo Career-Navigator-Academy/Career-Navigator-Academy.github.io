@@ -82,6 +82,8 @@ export default function Landing() {
                 }}
                 variant="contained"
                 className="contained"
+                component="a"
+                href="/apply"
               >
                 Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
               </Button>

@@ -30,7 +30,12 @@ export default function Ready() {
         Join the community of other amazing like minded people
       </Typography>
       <Box justifyContent="center" display="flex">
-        <Button variant="contained" className="contained">
+        <Button
+          component="a"
+          href="/apply"
+          variant="contained"
+          className="contained"
+        >
           Join Us Now
         </Button>
       </Box>
