@@ -20,33 +20,17 @@ export default function Resources() {
         <Grid item md={6} sx={{ p: 2 }}>
           <Box
             component="img"
-            src="https://images.unsplash.com/photo-1527090975279-5d5ef18c6734?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29uZnVzZWQlMjBibGFjayUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+            src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHx0ZWNobm9sb2d5fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
             sx={{ width: "100%" }}
           />
           <Typography variant="body2">September 29th 2023</Typography>
-          <a href="/">
+          <a href="/navigating-the-software-development-galaxy">
             <Typography variant="h6">
-              Getting started with JavaScript libraries and frame works: lesson
-              1
+              Navigating the Software Development Galaxy
             </Typography>
           </a>
         </Grid>
         {/*  */}
-
-        <Grid item md={6} sx={{ p: 2, pt: { md: 2, xs: 7 } }}>
-          <Box
-            component="img"
-            src="https://images.unsplash.com/photo-1527090975279-5d5ef18c6734?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29uZnVzZWQlMjBibGFjayUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
-            sx={{ width: "100%" }}
-          />
-          <Typography variant="body2">September 29th 2023</Typography>
-          <a href="/">
-            <Typography variant="h6">
-              Getting started with JavaScript libraries and frame works: lesson
-              1
-            </Typography>
-          </a>
-        </Grid>
       </Grid>
     </Box>
   );

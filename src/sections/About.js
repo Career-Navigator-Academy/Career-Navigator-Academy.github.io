@@ -99,7 +99,7 @@ export default function About() {
         <Grid container alignItems="center" columnSpacing={4} sx={{ py: 7 }}>
           <Grid item md={6}>
             <Typography variant="p" sx={{ color: "#C6E5F9" }}>
-              What happens after the programme?
+              What happens after the program?
             </Typography>
             <Typography variant="h4" sx={{ fontWeight: 500 }}>
               Welcome to the real world
@@ -121,20 +121,6 @@ export default function About() {
             />
           </Grid>
         </Grid>
-
-        <Box sx={{ mt: { md: 0, xs: 2 } }}>
-          <Button
-            component="a"
-            href="/apply"
-            sx={{
-              p: 1,
-            }}
-            variant="contained"
-            className="containedlight"
-          >
-            Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-          </Button>
-        </Box>
       </Container>
 
       {/* Mobile */}
@@ -229,7 +215,7 @@ export default function About() {
           </Grid>
           <Grid item xs={12} sx={{ mt: { md: 9, xs: 3 } }}>
             <Typography variant="p" sx={{ color: "#C6E5F9" }}>
-              What happens after the programme?
+              What happens after the program?
             </Typography>
             <Typography variant="h4" sx={{ fontWeight: 500, pt: 3 }}>
               Welcome to the real world
@@ -243,20 +229,6 @@ export default function About() {
             </Typography>
           </Grid>
         </Grid>
-
-        <Box sx={{ mt: { md: 5, xs: 2 } }}>
-          <Button
-            component="a"
-            href="/apply"
-            sx={{
-              p: 1,
-            }}
-            variant="outlined"
-            className="containedlight"
-          >
-            Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-          </Button>
-        </Box>
       </Container>
     </Box>
   );
