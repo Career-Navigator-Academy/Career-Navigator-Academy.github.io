@@ -16,7 +16,7 @@ export default function Partner() {
               <Typography
                 sx={{ py: 2 }}
                 gutterBottom
-                variant="h5"
+                variant="h6"
                 component="div"
               >
                 Donate to Career Navigator Academy
@@ -41,7 +41,7 @@ export default function Partner() {
               <Typography
                 gutterBottom
                 sx={{ py: 2 }}
-                variant="h5"
+                variant="h6"
                 component="div"
               >
                 Become a Partner
@@ -67,7 +67,7 @@ export default function Partner() {
               <Typography
                 gutterBottom
                 sx={{ py: 2 }}
-                variant="h5"
+                variant="h6"
                 component="div"
               >
                 Hire Our Alumni
@@ -97,7 +97,7 @@ export default function Partner() {
               <Typography
                 gutterBottom
                 sx={{ py: 2 }}
-                variant="h5"
+                variant="h6"
                 component="div"
               >
                 Sponsor a Student
@@ -126,7 +126,7 @@ export default function Partner() {
               <Typography
                 gutterBottom
                 sx={{ py: 2 }}
-                variant="h5"
+                variant="h6"
                 component="div"
               >
                 Host a Training program

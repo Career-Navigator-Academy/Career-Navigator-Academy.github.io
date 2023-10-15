@@ -19,7 +19,9 @@ export default function Paths() {
       <Grid container columnSpacing={2} justifyContent="center" paddingTop={7}>
         <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <Card className="card" sx={{ p: 5, color: "f4f4f4" }}>
-            <Typography sx={{ pb: 2 }}>Software Engineering</Typography>
+            <Typography variant="h6" sx={{ pb: 2 }}>
+              Software Engineering
+            </Typography>
             <Typography>
               Software engineering is the systematic process of designing,
               developing, testing, and maintaining software applications and
@@ -32,7 +34,9 @@ export default function Paths() {
         </Grid>
         <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <Card className="card" sx={{ p: 5 }}>
-            <Typography sx={{ pb: 2 }}>Front-End Development</Typography>
+            <Typography variant="h6" sx={{ pb: 2 }}>
+              Front-End Development
+            </Typography>
             <Typography>
               Front-end development, often referred to as "client-side
               development," is the practice of creating the user interface and
@@ -45,7 +49,9 @@ export default function Paths() {
         </Grid>
         <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <Card className="card" sx={{ p: 5 }}>
-            <Typography sx={{ pb: 2 }}>Back-End Development</Typography>
+            <Typography variant="h6" sx={{ pb: 2 }}>
+              Back-End Development
+            </Typography>
             <Typography>
               Back-end development is the part of software engineering that
               deals with the server-side of applications, handling data, logic,
@@ -59,7 +65,9 @@ export default function Paths() {
         </Grid>
         <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <Card className="card" sx={{ p: 5 }}>
-            <Typography sx={{ pb: 2 }}>Technical Writing</Typography>
+            <Typography variant="h6" sx={{ pb: 2 }}>
+              Technical Writing
+            </Typography>
             <Typography>
               Technical writing is a style of writing that simplifies complex
               technical information for easy understanding by non-experts, often
@@ -72,7 +80,9 @@ export default function Paths() {
         </Grid>
         <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <Card className="card" sx={{ p: 5 }}>
-            <Typography sx={{ pb: 2 }}>UI/UX </Typography>
+            <Typography variant="h6" sx={{ pb: 2 }}>
+              UI/UX{" "}
+            </Typography>
             <Typography>
               UI (User Interface) is the visual design of a digital product,
               while UX (User Experience) focuses on optimizing the overall user
