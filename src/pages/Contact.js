@@ -1,4 +1,4 @@
-import { Box, Grid, TextField } from "@mui/material";
+import { Box, Grid, TextField, Typography } from "@mui/material";
 import React from "react";
 
 export default function Contact() {
@@ -7,7 +7,12 @@ export default function Contact() {
       sx={{ px: { md: 25, xs: 3 }, py: { md: 15, xs: 5 } }}
       columnSpacing={8}
     >
-      <Grid container>
+      <Typography sx={{ p: 2 }}>
+        Do you have any suggestions, complaints, or requests? We value your
+        feedback, so please take a moment to complete the form below, and we
+        will promptly respond to your message.
+      </Typography>
+      <Grid container component="form">
         <Grid item md={6} xs={12} sx={{ p: 2 }}>
           <TextField
             label="Name"
@@ -41,6 +46,8 @@ export default function Contact() {
             // onChange={handleChange}
             fullWidth
             required
+            multiline
+            rows={4}
           />
         </Grid>
       </Grid>

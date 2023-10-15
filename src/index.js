@@ -13,6 +13,7 @@ import PageNotFound from "./pages/404";
 import Enroll from "./pages/Enroll";
 import NavBar from "./components/AppBar";
 import BottomNav from "./components/Footer";
+import FirstArticle from "./articles/FirstArticle";
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
         <Route path="/apply" element={<Enroll />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/contact" element={<Contact />} />
+        <Route
+          path="/navigating-the-software-development-galaxy"
+          element={<FirstArticle />}
+        />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <BottomNav />
