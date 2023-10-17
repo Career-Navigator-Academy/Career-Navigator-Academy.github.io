@@ -23,7 +23,7 @@ export default function Ready() {
       </Box>
       <Typography
         variant="h6"
-        sx={{ py: 2, textAlign: "center" }}
+        sx={{ py: 2, textAlign: "center", color: "#404040" }}
         justifyContent="center"
         display="flex"
       >

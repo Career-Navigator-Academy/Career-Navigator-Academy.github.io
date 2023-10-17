@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Resources() {
   return (
@@ -24,11 +25,11 @@ export default function Resources() {
             sx={{ width: "100%" }}
           />
           <Typography variant="body2">September 29th 2023</Typography>
-          <a href="/navigating-the-software-development-galaxy">
+          <Link to="/navigating-the-software-development-galaxy">
             <Typography variant="h6">
               Navigating the Software Development Galaxy
             </Typography>
-          </a>
+          </Link>
         </Grid>
         {/*  */}
       </Grid>
