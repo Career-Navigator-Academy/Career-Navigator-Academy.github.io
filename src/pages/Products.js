@@ -15,7 +15,11 @@ export default function Products() {
         Coming Soon
       </Typography>
 
-      <Typography sx={{ p: 5 }} textAlign="center" variant="h5">
+      <Typography
+        sx={{ p: 5, color: "#404040" }}
+        textAlign="center"
+        variant="h5"
+      >
         Welcome to our project showcase, where we proudly display the collective
         fruits of our teamwork! Here, you'll discover a treasure trove of
         remarkable projects and the extraordinary technological solutions we

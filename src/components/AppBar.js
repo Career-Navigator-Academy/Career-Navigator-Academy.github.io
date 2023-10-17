@@ -33,38 +33,41 @@ export default function NavBar() {
         }}
       >
         <Toolbar disableGutters>
-          <Box
-            component="img"
-            src={logo}
-            sx={{ width: "80px", display: { xs: "none", md: "flex" }, mr: 1 }}
-          />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              textDecoration: "none",
-              color: "black",
-            }}
-          >
-            C-Nava
-          </Typography>
-
-          <Box
-            component="img"
-            src={logo}
-            sx={{
-              width: "70px",
-              display: { xs: "flex", md: "none" },
-              ml: 3,
-            }}
-          />
+          <Link to="/">
+            <Box
+              component="img"
+              src={logo}
+              sx={{ width: "80px", display: { xs: "none", md: "flex" }, mr: 1 }}
+            />
+          </Link>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Typography
+              variant="h6"
+              noWrap
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                textDecoration: "none",
+                color: "black",
+              }}
+            >
+              C-Nava
+            </Typography>
+          </Link>
+          <Link to="/">
+            <Box
+              component="img"
+              src={logo}
+              sx={{
+                width: "70px",
+                display: { xs: "flex", md: "none" },
+                ml: 3,
+              }}
+            />
+          </Link>
           <Box
             justifyContent="flex-end"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, mr: 3 }}

@@ -29,7 +29,7 @@ export default function About() {
         </Typography>
 
         <Grid container alignItems="center" columnSpacing={4} sx={{ py: 7 }}>
-          <Grid item md={6}>
+          <Grid item md={6} sm={6}>
             <Typography variant="p" sx={{ color: "#C6E5F9" }}>
               What is the program about?
             </Typography>
@@ -64,14 +64,14 @@ export default function About() {
         {/* Grid 2 */}
 
         <Grid container alignItems="center" columnSpacing={4} sx={{ py: 7 }}>
-          <Grid item md={6} justifyContent="center" display="center">
+          <Grid item md={6} sm={6} justifyContent="center" display="center">
             <Box
               component="img"
               src={students}
               sx={{ width: { md: "100%", xs: "100%" }, borderRadius: "30px" }}
             />
           </Grid>
-          <Grid item md={6}>
+          <Grid item md={6} sm={6}>
             <Typography variant="p" sx={{ color: "#C6E5F9" }}>
               How long is the program ?
             </Typography>
@@ -96,7 +96,7 @@ export default function About() {
         {/* Grid 3 */}
 
         <Grid container alignItems="center" columnSpacing={4} sx={{ py: 7 }}>
-          <Grid item md={6}>
+          <Grid item md={6} sm={6}>
             <Typography variant="p" sx={{ color: "#C6E5F9" }}>
               What happens after the program?
             </Typography>
@@ -112,7 +112,7 @@ export default function About() {
               journey.
             </Typography>
           </Grid>
-          <Grid item md={6} justifyContent="center" display="center">
+          <Grid item md={6} sm={6} justifyContent="center" display="center">
             <Box
               component="img"
               src={boy}
@@ -140,22 +140,25 @@ export default function About() {
         </Typography>
 
         <Grid container columnSpacing={4}>
-          <Grid item xs={12} justifyContent="center" display="center">
+          <Grid item xs={12} justifyContent="center" mx="auto">
             <Box
               component="img"
               src={pic}
-              sx={{ width: { md: "100%", xs: "100%" }, borderRadius: "30px" }}
+              sx={{
+                width: { md: "100%", xs: "100%" },
+                borderRadius: "30px",
+              }}
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: { md: 9, xs: 3 } }}>
-            <Typography variant="p" sx={{ color: "#C6E5F9" }}>
+            <Typography variant="body" sx={{ color: "#C6E5F9" }}>
               What is the program about?
             </Typography>
-            <Typography variant="h4" sx={{ fontWeight: 500, pt: 3 }}>
+            <Typography variant="h5" sx={{ fontWeight: 500, py: 3 }}>
               We firmly believe that learning by doing is the most effective way
               to prepare for a successful career.
             </Typography>
-            <Typography variant="h6" sx={{ color: "#C6E5F9", pt: 3 }}>
+            <Typography variant="body" sx={{ color: "#C6E5F9", pt: 3 }}>
               Our mission is to provide the guidance and resources necessary to
               help our participants navigate their career paths effectively. We
               are committed to nurturing talent, fostering growth, and
@@ -163,7 +166,7 @@ export default function About() {
               dreams.
             </Typography>
             <br style={{ marginBottom: 18 }} />
-            <Typography variant="h6" sx={{ color: "#C6E5F9", pt: 3 }}>
+            <Typography variant="body" sx={{ color: "#C6E5F9", pt: 3 }}>
               We are committed to nurturing talent, fostering growth, and
               instilling confidence in our participants as they pursue their
               dreams.
@@ -182,19 +185,19 @@ export default function About() {
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: { md: 9, xs: 3 } }}>
-            <Typography variant="p" sx={{ color: "#C6E5F9" }}>
+            <Typography variant="body" sx={{ color: "#C6E5F9" }}>
               How long is the program ?
             </Typography>
-            <Typography variant="h4" sx={{ fontWeight: 500, pt: 3 }}>
+            <Typography variant="h5" sx={{ fontWeight: 500, py: 3 }}>
               4 Acive months of rigorous training
             </Typography>
-            <Typography variant="h6" sx={{ color: "#C6E5F9", pt: 3 }}>
+            <Typography variant="body" sx={{ color: "#C6E5F9", pt: 3 }}>
               We understand that the journey to a successful career can be
               challenging, but with the right support and practical experience,
               it becomes achievable for everyone.
             </Typography>
             <br style={{ marginBottom: 18 }} />
-            <Typography variant="h6" sx={{ color: "#C6E5F9", pt: 3 }}>
+            <Typography variant="body" sx={{ color: "#C6E5F9", pt: 3 }}>
               We are committed to nurturing talent, fostering growth, and
               instilling confidence in our participants as they pursue their
               dreams.
@@ -213,13 +216,13 @@ export default function About() {
             />
           </Grid>
           <Grid item xs={12} sx={{ mt: { md: 9, xs: 3 } }}>
-            <Typography variant="p" sx={{ color: "#C6E5F9" }}>
+            <Typography variant="body" sx={{ color: "#C6E5F9" }}>
               What happens after the program?
             </Typography>
-            <Typography variant="h4" sx={{ fontWeight: 500, pt: 3 }}>
+            <Typography variant="h5" sx={{ fontWeight: 500, py: 3 }}>
               Welcome to the real world
             </Typography>
-            <Typography variant="h6" sx={{ color: "#C6E5F9", pt: 3 }}>
+            <Typography variant="body" sx={{ color: "#C6E5F9", pt: 3 }}>
               We find/ create real world opportunities for participants to
               enagage in real world jobs, show their skill, land internship
               roles and even get job opportunities. Want to start your own

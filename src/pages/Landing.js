@@ -20,22 +20,21 @@ export default function Landing() {
           display="flex"
           container
           sx={{ px: { md: 5, xs: 3 } }}
-          columnSpacing={{ md: 2, xs: 0 }}
+          columnSpacing={{ md: 2, sm: 2, xs: 0 }}
         >
-          <Grid item md={4} xs={12}>
+          <Grid item md={4} sm={4} xs={12} justifyContent="center" my="auto">
             <Box
               component="img"
               src={girl}
               sx={{
-                width: { md: "400px", xs: "100%" },
-                height: { md: "590px", xs: "95%" },
+                width: { md: "90%", xs: "100%" },
                 borderRadius: "35px",
                 ml: { md: 12, xs: 0 },
                 mt: { md: 3, xs: 3 },
               }}
             />
           </Grid>
-          <Grid item md={8} xs={12}>
+          <Grid item md={8} sm={8} xs={12} justifyContent="center" my="auto">
             <Box sx={{ pl: { md: 10, xs: 0 }, pt: { md: 10, xs: 4 } }}>
               <Box
                 component="img"
@@ -63,7 +62,7 @@ export default function Landing() {
               <Box>
                 <Typography
                   variant="p"
-                  style={{ color: "#303030", position: "" }}
+                  style={{ color: "#383838", position: "" }}
                 >
                   Are you ready to embark on a journey towards your dream
                   career? Career Navigator Academy is here to guide you every
@@ -74,7 +73,12 @@ export default function Landing() {
                 </Typography>
               </Box>
             </Box>
-            <Box sx={{ ml: { md: 10, xs: 0 }, mt: { md: 5, xs: 2 } }}>
+            <Box
+              sx={{
+                ml: { md: 10, xs: 0 },
+                mt: { md: 5, xs: 2 },
+              }}
+            >
               <Button
                 sx={{
                   textTransform: "none",

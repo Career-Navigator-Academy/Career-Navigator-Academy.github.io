@@ -2,6 +2,7 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import third from "../resources/bulb.png";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { Link } from "react-router-dom";
 
 export default function Join() {
   return (
@@ -30,7 +31,7 @@ export default function Join() {
         alignItems="center"
       >
         <Grid container columnSpacing={2} sx={{ color: "#fff" }}>
-          <Grid item md={4} sx={{ zIndex: 1 }}>
+          <Grid item md={4} sm={12} xs={12} sx={{ zIndex: 1 }}>
             <Box
               sx={{
                 display: "flex",
@@ -55,30 +56,36 @@ export default function Join() {
               potential.
             </Typography>
             <Box
-              justifyContent={{ md: "flex-start", xs: "center" }}
+              justifyContent={{ md: "flex-start", xs: "center", sm: "center" }}
               display="flex"
               sx={{ pt: 5 }}
             >
-              <Button
-                component="a"
-                href="/apply"
-                variant="contained"
-                className="containedlight"
-              >
-                Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />{" "}
-              </Button>
+              <Link to="/apply">
+                <Button variant="contained" className="containedlight">
+                  Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />{" "}
+                </Button>
+              </Link>
             </Box>
           </Grid>
           <Grid
             item
             md={8}
+            sm={12}
+            xs={12}
             display="flex"
             align="center"
             justifyContent="center"
             sx={{ zIndex: 1, pt: { md: 0, xs: 7 } }}
           >
             <Grid container>
-              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid
+                item
+                md={4}
+                sm={12}
+                xs={12}
+                sx={{ p: 2 }}
+                className="cardtext"
+              >
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     01
@@ -91,7 +98,14 @@ export default function Join() {
                   Acquire valuable skills and knowledge from mentors.
                 </Typography>
               </Grid>
-              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid
+                item
+                md={4}
+                sm={12}
+                xs={12}
+                sx={{ p: 2 }}
+                className="cardtext"
+              >
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     02
@@ -104,7 +118,14 @@ export default function Join() {
                   Expand your professional network through connections.
                 </Typography>
               </Grid>
-              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid
+                item
+                md={4}
+                sm={12}
+                xs={12}
+                sx={{ p: 2 }}
+                className="cardtext"
+              >
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     03
@@ -119,7 +140,14 @@ export default function Join() {
                 </Typography>
               </Grid>
 
-              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid
+                item
+                md={4}
+                sm={12}
+                xs={12}
+                sx={{ p: 2 }}
+                className="cardtext"
+              >
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     04
@@ -133,7 +161,14 @@ export default function Join() {
                   make informed decisions and avoid common pitfalls.
                 </Typography>
               </Grid>
-              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid
+                item
+                md={4}
+                sm={12}
+                xs={12}
+                sx={{ p: 2 }}
+                className="cardtext"
+              >
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     05
@@ -147,7 +182,14 @@ export default function Join() {
                   improvement and track your progress.
                 </Typography>
               </Grid>
-              <Grid item md={4} sx={{ p: 2 }} className="cardtext">
+              <Grid
+                item
+                md={4}
+                sm={12}
+                xs={12}
+                sx={{ p: 2 }}
+                className="cardtext"
+              >
                 <Box className="circle">
                   <Typography className="text" variant="h5">
                     07

@@ -16,10 +16,10 @@ export default function Programs() {
           display="flex"
           container
           sx={{ px: { md: 5, xs: 3 } }}
-          columnSpacing={{ md: 0, xs: 0 }}
+          columnSpacing={{ md: 4, xs: 0 }}
         >
-          <Grid item md={7} xs={12}>
-            <Box sx={{ pl: { md: 10, xs: 0 }, pt: { md: 10, xs: 4 } }}>
+          <Grid item md={7} sm={7} xs={12} justifyContent="center" my="auto">
+            <Box sx={{ pl: { md: 10, sm: "5", xs: 0 } }}>
               <Box
                 component="img"
                 src={draft}
@@ -39,7 +39,7 @@ export default function Programs() {
               <Box>
                 <Typography
                   variant="p"
-                  style={{ color: "#303030", position: "" }}
+                  style={{ color: "#404040", position: "" }}
                 >
                   "We are wholeheartedly dedicated to transforming you into the
                   absolute best version of yourself through immersive hands-on
@@ -62,16 +62,13 @@ export default function Programs() {
               </Button>
             </Box>
           </Grid>
-          <Grid item md={5} xs={12}>
+          <Grid item md={5} xs={12} sm={5} justifyContent="center" my="auto">
             <Box
               component="img"
               src={girl}
               sx={{
-                width: { md: "400px", xs: "100%" },
-                // height: { md: "590px", xs: "95%" },
+                width: { md: "70%", sm: "90%", xs: "100%" },
                 borderRadius: "35px",
-                ml: { md: 12, xs: 0 },
-                mt: { md: 3, xs: 3 },
               }}
             />
           </Grid>
@@ -115,12 +112,14 @@ export default function Programs() {
             />
           </Grid>
           <Grid item md={6}>
-            <Typography variant="p">What is the program about?</Typography>
+            <Typography variant="p" sx={{ color: "#303030" }}>
+              What is the program about?
+            </Typography>
             <Typography variant="h4" sx={{ fontWeight: 500 }}>
               Career Navigator Mentorship
             </Typography>
             <br />
-            <Typography variant="p">
+            <Typography variant="p" sx={{ color: "#303030" }}>
               Our mission is to provide the guidance and resources necessary to
               help our participants navigate their career paths effectively. We
               are committed to nurturing talent, fostering growth, and
@@ -128,7 +127,7 @@ export default function Programs() {
               dreams.
             </Typography>
             <br style={{ marginBottom: 18 }} />
-            <Typography variant="p">
+            <Typography variant="p" sx={{ color: "#303030" }}>
               We are committed to nurturing talent, fostering growth, and
               instilling confidence in our participants as they pursue their
               dreams.

@@ -22,7 +22,7 @@ export default function Paths() {
             <Typography variant="h6" sx={{ pb: 2 }}>
               Software Engineering
             </Typography>
-            <Typography>
+            <Typography sx={{ color: "#383838" }}>
               Software engineering is the systematic process of designing,
               developing, testing, and maintaining software applications and
               systems.
@@ -37,7 +37,7 @@ export default function Paths() {
             <Typography variant="h6" sx={{ pb: 2 }}>
               Front-End Development
             </Typography>
-            <Typography>
+            <Typography sx={{ color: "#383838" }}>
               Front-end development, often referred to as "client-side
               development," is the practice of creating the user interface and
               user experience of a website or web application.
@@ -52,7 +52,7 @@ export default function Paths() {
             <Typography variant="h6" sx={{ pb: 2 }}>
               Back-End Development
             </Typography>
-            <Typography>
+            <Typography sx={{ color: "#383838" }}>
               Back-end development is the part of software engineering that
               deals with the server-side of applications, handling data, logic,
               and infrastructure to make the front-end user interface work
@@ -68,7 +68,7 @@ export default function Paths() {
             <Typography variant="h6" sx={{ pb: 2 }}>
               Technical Writing
             </Typography>
-            <Typography>
+            <Typography sx={{ color: "#383838" }}>
               Technical writing is a style of writing that simplifies complex
               technical information for easy understanding by non-experts, often
               used in manuals, reports, and guides across different industries.
@@ -83,7 +83,7 @@ export default function Paths() {
             <Typography variant="h6" sx={{ pb: 2 }}>
               UI/UX{" "}
             </Typography>
-            <Typography>
+            <Typography sx={{ color: "#383838" }}>
               UI (User Interface) is the visual design of a digital product,
               while UX (User Experience) focuses on optimizing the overall user
               interaction and satisfaction with the product.
