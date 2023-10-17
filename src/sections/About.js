@@ -1,9 +1,8 @@
 import React from "react";
-import { Container, Box, Typography, Grid, Button } from "@mui/material";
+import { Container, Box, Typography, Grid } from "@mui/material";
 import pic from "../resources/freepik.jpg";
 import boy from "../resources/boy2.jpg";
 import students from "../resources/africa.jpg";
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 
 export default function About() {
   return (
