@@ -5,11 +5,13 @@ import Typography from "@mui/material/Typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
-  faTwitter,
   faLinkedin,
   faInstagram,
+  faGithub,
+  faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, Button, Grid, TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const BottomNav = () => {
   return (
@@ -38,46 +40,35 @@ const BottomNav = () => {
               Quick Links
             </Typography>{" "}
             <br />
-            <Typography
-              sx={{ textDecoration: "none", color: "#383838" }}
-              component="a"
-              href="/programs"
-              variant="body2"
-            >
-              Programs
-            </Typography>{" "}
-            <br />
-            <Typography
-              sx={{ textDecoration: "none", color: "#383838" }}
-              component="a"
-              href="/resources"
-              variant="body2"
-            >
-              Resources
-            </Typography>{" "}
-            <br />
-            <Typography
-              sx={{ textDecoration: "none", color: "#383838" }}
-              component="a"
-              href="/contact"
-              variant="body2"
-            >
-              Contact
-            </Typography>
+            <Link to="/programs" style={{ textDecoration: "none" }}>
+              <Typography sx={{ color: "#383838", py: 1 }} variant="body2">
+                Programs
+              </Typography>
+            </Link>
+            <Link to="/resources" style={{ textDecoration: "none" }}>
+              <Typography sx={{ color: "#383838" }} variant="body2">
+                Resources
+              </Typography>
+            </Link>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <Typography sx={{ color: "#383838", py: 1 }} variant="body2">
+                Contact
+              </Typography>
+            </Link>
           </Grid>
 
           <Grid item xs={12} md={3} sx={{ mb: { md: 0, xs: 3 } }}>
             <Typography sx={{ color: "#303030" }} variant="p">
               Follow Us
-            </Typography>{" "}
+            </Typography>
             <br />
+            <FontAwesomeIcon
+              icon={faGithub}
+              style={{ fontSize: "20px", margin: "5px" }}
+            />
             <FontAwesomeIcon
               style={{ fontSize: "20px", margin: "5px" }}
               icon={faFacebook}
-            />
-            <FontAwesomeIcon
-              icon={faTwitter}
-              style={{ fontSize: "20px", margin: "5px" }}
             />
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -87,8 +78,19 @@ const BottomNav = () => {
               icon={faInstagram}
               style={{ fontSize: "20px", margin: "5px" }}
             />
+            <FontAwesomeIcon
+              icon={faSquareXTwitter}
+              style={{ fontSize: "20px", margin: "5px" }}
+            />
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid
+            item
+            xs={12}
+            md={3}
+            component="form"
+            action="https://formspree.io/f/xeqbvyag"
+            method="POST"
+          >
             <TextField
               helperText="Subscribe to our newsletter"
               label="Enter your email"
@@ -97,7 +99,7 @@ const BottomNav = () => {
               required
               fullWidth
             />
-            <Button sx={{ m: 1 }} variant="contained">
+            <Button type="submit" sx={{ m: 1 }} variant="contained">
               Subscribe
             </Button>
           </Grid>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography, Grid, Button, Card } from "@mui/material";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { Link } from "react-router-dom";
 
 export default function Paths() {
   return (
@@ -27,9 +28,11 @@ export default function Paths() {
               developing, testing, and maintaining software applications and
               systems.
             </Typography>
-            <Button component="a" href="/apply" className="containedblack">
-              Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-            </Button>
+            <Link to="/apply">
+              <Button className="containedblack">
+                Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+              </Button>
+            </Link>
           </Card>
         </Grid>
         <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
@@ -42,9 +45,11 @@ export default function Paths() {
               development," is the practice of creating the user interface and
               user experience of a website or web application.
             </Typography>
-            <Button component="a" href="/apply" className="containedblack">
-              Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-            </Button>
+            <Link to="/apply">
+              <Button className="containedblack">
+                Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+              </Button>
+            </Link>
           </Card>
         </Grid>
         <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
@@ -58,9 +63,11 @@ export default function Paths() {
               and infrastructure to make the front-end user interface work
               seamlessly.
             </Typography>
-            <Button component="a" href="/apply" className="containedblack">
-              Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-            </Button>
+            <Link to="/apply">
+              <Button className="containedblack">
+                Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+              </Button>
+            </Link>
           </Card>
         </Grid>
         <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
@@ -73,9 +80,11 @@ export default function Paths() {
               technical information for easy understanding by non-experts, often
               used in manuals, reports, and guides across different industries.
             </Typography>
-            <Button component="a" href="/apply" className="containedblack">
-              Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-            </Button>
+            <Link to="/apply">
+              <Button className="containedblack">
+                Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+              </Button>
+            </Link>
           </Card>
         </Grid>
         <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
@@ -88,9 +97,11 @@ export default function Paths() {
               while UX (User Experience) focuses on optimizing the overall user
               interaction and satisfaction with the product.
             </Typography>
-            <Button component="a" href="/apply" className="containedblack">
-              Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-            </Button>
+            <Link to="/apply">
+              <Button className="containedblack">
+                Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+              </Button>
+            </Link>
           </Card>
         </Grid>
       </Grid>
