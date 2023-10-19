@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Ready() {
   return (
@@ -30,14 +31,11 @@ export default function Ready() {
         Join the community of other amazing like minded people
       </Typography>
       <Box justifyContent="center" display="flex">
-        <Button
-          component="a"
-          href="/apply"
-          variant="contained"
-          className="contained"
-        >
-          Join Us Now
-        </Button>
+        <Link to="/apply">
+          <Button variant="contained" className="contained">
+            Join Us Now
+          </Button>
+        </Link>
       </Box>
     </Box>
   );

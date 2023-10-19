@@ -5,6 +5,7 @@ import girl from "../resources/pod.jpg";
 import draft from "../resources/bulb.png";
 import prog from "../resources/freepik.jpg";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { Link } from "react-router-dom";
 
 export default function Programs() {
   return (
@@ -66,6 +67,7 @@ export default function Programs() {
             <Box
               component="img"
               src={girl}
+              alt="A girl sitting on a chair with a podcast microphone"
               sx={{
                 width: { md: "70%", sm: "90%", xs: "100%" },
                 borderRadius: "35px",
@@ -105,6 +107,7 @@ export default function Programs() {
             <Box
               component="img"
               src={prog}
+              alt="a girl sitting in front of a desktop with headphones on"
               sx={{
                 width: { md: "100%", xs: "100%" },
                 borderRadius: "30px",
@@ -133,18 +136,18 @@ export default function Programs() {
               dreams.
             </Typography>
             <Box sx={{ ml: { md: 0, xs: 0 }, mt: { md: 5, xs: 2 } }}>
-              <Button
-                component="a"
-                href="/apply"
-                sx={{
-                  textTransform: "none",
-                  p: 1,
-                }}
-                variant="contained"
-                className="containedlight"
-              >
-                Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-              </Button>
+              <Link to="/apply">
+                <Button
+                  sx={{
+                    textTransform: "none",
+                    p: 1,
+                  }}
+                  variant="contained"
+                  className="containedlight"
+                >
+                  Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                </Button>
+              </Link>
             </Box>
           </Grid>
         </Grid>

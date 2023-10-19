@@ -9,6 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 import Join from "../sections/Join";
 import Paths from "../sections/Paths";
 import Ready from "../sections/Ready";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
   return (
@@ -25,6 +26,7 @@ export default function Landing() {
           <Grid item md={4} sm={4} xs={12} justifyContent="center" my="auto">
             <Box
               component="img"
+              alt="Smiling girl"
               src={girl}
               sx={{
                 width: { md: "90%", xs: "100%" },
@@ -39,6 +41,7 @@ export default function Landing() {
               <Box
                 component="img"
                 src={draft}
+                alt="idea bulb"
                 sx={{ width: { md: "50px", xs: "35px" } }}
               />
               <Typography
@@ -52,7 +55,6 @@ export default function Landing() {
                 Your career journey starts <br />
                 <TypeAnimation
                   sequence={["here", 2000, "now", 2000, "with us", 1500]}
-                  // style={{ fontSize: "2em" }}
                   style={{ color: "#0A77C1" }}
                   repeat={Infinity}
                   speed={1}
@@ -79,18 +81,18 @@ export default function Landing() {
                 mt: { md: 5, xs: 2 },
               }}
             >
-              <Button
-                sx={{
-                  textTransform: "none",
-                  p: 1,
-                }}
-                variant="contained"
-                className="contained"
-                component="a"
-                href="/apply"
-              >
-                Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-              </Button>
+              <Link to="/apply">
+                <Button
+                  sx={{
+                    textTransform: "none",
+                    p: 1,
+                  }}
+                  variant="contained"
+                  className="contained"
+                >
+                  Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                </Button>
+              </Link>
             </Box>
           </Grid>
         </Grid>
