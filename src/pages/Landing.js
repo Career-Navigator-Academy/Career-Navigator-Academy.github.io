@@ -26,6 +26,7 @@ export default function Landing() {
           <Grid item md={4} sm={4} xs={12} justifyContent="center" my="auto">
             <Box
               component="img"
+              alt="Smiling girl"
               src={girl}
               sx={{
                 width: { md: "90%", xs: "100%" },
@@ -40,6 +41,7 @@ export default function Landing() {
               <Box
                 component="img"
                 src={draft}
+                alt="idea bulb"
                 sx={{ width: { md: "50px", xs: "35px" } }}
               />
               <Typography
@@ -53,7 +55,6 @@ export default function Landing() {
                 Your career journey starts <br />
                 <TypeAnimation
                   sequence={["here", 2000, "now", 2000, "with us", 1500]}
-                  // style={{ fontSize: "2em" }}
                   style={{ color: "#0A77C1" }}
                   repeat={Infinity}
                   speed={1}

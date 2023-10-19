@@ -56,6 +56,7 @@ export default function About() {
             <Box
               component="img"
               src={pic}
+              alt="girl sitting in front of a desktop with headphones on"
               sx={{ width: { md: "100%", xs: "100%" }, borderRadius: "30px" }}
             />
           </Grid>
@@ -68,6 +69,7 @@ export default function About() {
             <Box
               component="img"
               src={students}
+              alt="Two people studying"
               sx={{ width: { md: "100%", xs: "100%" }, borderRadius: "30px" }}
             />
           </Grid>
@@ -116,6 +118,7 @@ export default function About() {
             <Box
               component="img"
               src={boy}
+              alt="a boy smiling"
               sx={{ width: { md: "100%", xs: "100%" }, borderRadius: "30px" }}
             />
           </Grid>
@@ -144,6 +147,7 @@ export default function About() {
             <Box
               component="img"
               src={pic}
+              alt="girl sitting in front of a desktop with headphones on"
               sx={{
                 width: { md: "100%", xs: "100%" },
                 borderRadius: "30px",
@@ -181,6 +185,7 @@ export default function About() {
             <Box
               component="img"
               src={students}
+              alt="Two people studying"
               sx={{ width: { md: "100%", xs: "100%" }, borderRadius: "30px" }}
             />
           </Grid>
@@ -212,6 +217,7 @@ export default function About() {
             <Box
               component="img"
               src={boy}
+              alt="a boy smiling"
               sx={{ width: { md: "100%", xs: "100%" }, borderRadius: "30px" }}
             />
           </Grid>

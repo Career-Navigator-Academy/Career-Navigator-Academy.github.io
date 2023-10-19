@@ -67,6 +67,7 @@ export default function Programs() {
             <Box
               component="img"
               src={girl}
+              alt="A girl sitting on a chair with a podcast microphone"
               sx={{
                 width: { md: "70%", sm: "90%", xs: "100%" },
                 borderRadius: "35px",
@@ -106,6 +107,7 @@ export default function Programs() {
             <Box
               component="img"
               src={prog}
+              alt="a girl sitting in front of a desktop with headphones on"
               sx={{
                 width: { md: "100%", xs: "100%" },
                 borderRadius: "30px",

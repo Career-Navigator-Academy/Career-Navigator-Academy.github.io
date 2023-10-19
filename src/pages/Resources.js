@@ -21,6 +21,7 @@ export default function Resources() {
         <Grid item md={6} sx={{ p: 2 }}>
           <Box
             component="img"
+            alt="a laptop and cofee mug"
             src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHx0ZWNobm9sb2d5fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
             sx={{ width: "100%" }}
           />
