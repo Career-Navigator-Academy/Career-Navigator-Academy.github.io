@@ -9,6 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 import Join from "../sections/Join";
 import Paths from "../sections/Paths";
 import Ready from "../sections/Ready";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
   return (
@@ -79,18 +80,18 @@ export default function Landing() {
                 mt: { md: 5, xs: 2 },
               }}
             >
-              <Button
-                sx={{
-                  textTransform: "none",
-                  p: 1,
-                }}
-                variant="contained"
-                className="contained"
-                component="a"
-                href="/apply"
-              >
-                Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-              </Button>
+              <Link to="/apply">
+                <Button
+                  sx={{
+                    textTransform: "none",
+                    p: 1,
+                  }}
+                  variant="contained"
+                  className="contained"
+                >
+                  Get Started <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                </Button>
+              </Link>
             </Box>
           </Grid>
         </Grid>
