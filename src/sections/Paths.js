@@ -18,23 +18,19 @@ export default function Paths() {
       <Typography variant="h2" sx={{ fontWeight: 500, textAlign: "center" }}>
         <span style={{ color: "#0A77C1" }}>Career</span> Paths
       </Typography>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        variants={{
-          visible: { opacity: 1, scale: 1 },
-          hidden: { opacity: 0, scale: 0 },
-        }}
-      >
-        <Grid
-          container
-          columnSpacing={2}
-          justifyContent="center"
-          paddingTop={7}
-        >
-          <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+
+      <Grid container columnSpacing={2} justifyContent="center" paddingTop={7}>
+        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <Card className="card" sx={{ p: 5, color: "f4f4f4" }}>
               <Typography variant="h6" sx={{ pb: 2 }}>
                 Software Engineering
@@ -50,8 +46,19 @@ export default function Paths() {
                 </Button>
               </Link>
             </Card>
-          </Grid>
-          <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+          </motion.div>
+        </Grid>
+        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <Card className="card" sx={{ p: 5 }}>
               <Typography variant="h6" sx={{ pb: 2 }}>
                 Front-End Development
@@ -67,8 +74,19 @@ export default function Paths() {
                 </Button>
               </Link>
             </Card>
-          </Grid>
-          <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+          </motion.div>
+        </Grid>
+        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <Card className="card" sx={{ p: 5 }}>
               <Typography variant="h6" sx={{ pb: 2 }}>
                 Back-End Development
@@ -85,8 +103,19 @@ export default function Paths() {
                 </Button>
               </Link>
             </Card>
-          </Grid>
-          <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+          </motion.div>
+        </Grid>
+        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <Card className="card" sx={{ p: 5 }}>
               <Typography variant="h6" sx={{ pb: 2 }}>
                 Technical Writing
@@ -103,8 +132,19 @@ export default function Paths() {
                 </Button>
               </Link>
             </Card>
-          </Grid>
-          <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+          </motion.div>
+        </Grid>
+        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
             <Card className="card" sx={{ p: 5 }}>
               <Typography variant="h6" sx={{ pb: 2 }}>
                 UI/UX{" "}
@@ -120,9 +160,9 @@ export default function Paths() {
                 </Button>
               </Link>
             </Card>
-          </Grid>
+          </motion.div>
         </Grid>
-      </motion.div>
+      </Grid>
     </Box>
   );
 }
