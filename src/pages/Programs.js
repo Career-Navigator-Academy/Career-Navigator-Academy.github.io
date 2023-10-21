@@ -47,7 +47,7 @@ export default function Programs() {
                     fontSize: { md: 75, xs: 50 },
                   }}
                 >
-                  Lets us hold your hands through your
+                  Let us hold your hands through your
                   <span style={{ color: "#0A77C1" }}> career journey</span>
                 </Typography>
                 <Box>

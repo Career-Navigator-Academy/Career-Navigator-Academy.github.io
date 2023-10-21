@@ -1,209 +1,83 @@
 import React from "react";
-import {
-  TextField,
-  Button,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Typography,
-  Box,
-  Grid,
-} from "@mui/material";
-import { motion } from "framer-motion";
+import { GoogleFormProvider, useGoogleForm } from "react-google-forms-hooks";
+import form from "../scripts/form.json";
+import DropdownInput from "../components/DropDown";
+import ShortAnswerInput from "../components/ShortAnswer";
+import LongAnswerInput from "../components/LongAnswer";
+import { Box, Button, Typography } from "@mui/material";
+
+const Questions = () => {
+  return (
+    <div>
+      {form.fields.map((field) => {
+        const { id } = field;
+
+        let questionInput = null;
+        switch (field.type) {
+          case "SHORT_ANSWER":
+            questionInput = <ShortAnswerInput id={id} />;
+            break;
+          case "LONG_ANSWER":
+            questionInput = <LongAnswerInput id={id} />;
+            break;
+          case "DROPDOWN":
+            questionInput = <DropdownInput id={id} />;
+            break;
+        }
+
+        if (!questionInput) {
+          return null;
+        }
+
+        return (
+          <Box key={id}>
+            <Typography variant="p">{field.label}</Typography>
+            {questionInput}
+            <Typography variant="p">{field.description}</Typography>
+          </Box>
+        );
+      })}
+    </div>
+  );
+};
 
 const Enroll = () => {
+  const methods = useGoogleForm({ form });
+  const onSubmit = async (data) => {
+    console.log(">>> Here is the data", data);
+    await methods.submitToGoogleForms(data);
+    alert("Form submitted with success!");
+
+    // Reset the form after submission
+    methods.reset({
+      data: {},
+    });
+  };
+
+  console.log(">>> Here are the errors!!!", methods.formState.errors);
+
   return (
-    <Box sx={{ px: { md: 25, xs: 2 }, py: { md: 15, xs: 5 }, mb: 10 }}>
-      <Typography variant="h4">Application Form</Typography>
+    <GoogleFormProvider {...methods}>
       <Box
         component="form"
-        action="https://formspree.io/f/xqkvwrpk"
         method="POST"
+        onSubmit={methods.handleSubmit(onSubmit)}
+        sx={{ px: { md: 25, xs: 2 }, py: { md: 15, xs: 5 }, mb: 10 }}
       >
-        <Grid container columnSpacing={4}>
-          <Grid item md={6} xs={12} sx={{ p: 2 }}>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
-            >
-              <TextField
-                label="Name"
-                variant="outlined"
-                name="name"
-                fullWidth
-                required
-              />
-            </motion.div>
-          </Grid>
-          <Grid item md={6} xs={12} sx={{ p: 2 }}>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
-            >
-              <TextField
-                label="Email"
-                variant="outlined"
-                type="email"
-                name="email"
-                fullWidth
-                required
-              />
-            </motion.div>
-          </Grid>
-          <Grid item md={4} xs={12} sx={{ p: 2 }}>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
-            >
-              <TextField
-                label="Phone Number"
-                variant="outlined"
-                name="phone"
-                fullWidth
-                required
-              />
-            </motion.div>
-          </Grid>
-          <Grid item md={4} xs={12} sx={{ p: 2 }}>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
-            >
-              <TextField
-                label="Age"
-                variant="outlined"
-                type="number"
-                name="age"
-                fullWidth
-                required
-              />
-            </motion.div>
-          </Grid>
-          <Grid item md={4} xs={12} sx={{ p: 2 }}>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
-            >
-              <FormControl fullWidth variant="outlined">
-                <InputLabel>Gender</InputLabel>
-                <Select label="Gender" name="gender" required>
-                  <MenuItem value="male">Male</MenuItem>
-                  <MenuItem value="female">Female</MenuItem>
-                  <MenuItem value="other">Other</MenuItem>
-                </Select>
-              </FormControl>
-            </motion.div>
-          </Grid>
-          <Grid item md={6} xs={12} sx={{ p: 2 }}>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
-            >
-              <FormControl fullWidth variant="outlined">
-                <InputLabel>Career Path</InputLabel>
-                <Select required name="career" label="Career Path">
-                  <MenuItem value="frontend">Front-End Development</MenuItem>
-                  <MenuItem value="backend">Back-End Development</MenuItem>
-                  <MenuItem value="technical writing">
-                    Technical Writing
-                  </MenuItem>
-                  <MenuItem value="UI/UX">UI/UX</MenuItem>
-                </Select>
-              </FormControl>
-            </motion.div>
-          </Grid>
-          <Grid item md={6} xs={12} sx={{ p: 2 }}>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
-            >
-              <TextField
-                label="How did you hear about us?"
-                variant="outlined"
-                name="hearAboutUs"
-                fullWidth
-                required
-              />
-            </motion.div>
-          </Grid>
-
-          <Grid item md={12} xs={12} sx={{ p: 2 }}>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
-            >
-              <TextField
-                label="Why should we accept you into the program?"
-                variant="outlined"
-                name="whyShouldAccept"
-                multiline
-                rows={4}
-                fullWidth
-                required
-              />
-            </motion.div>
-          </Grid>
-          <Button
-            sx={{ ml: 4 }}
-            type="submit"
-            variant="contained"
-            color="primary"
-            className="contained"
-          >
-            Submit
-          </Button>
-        </Grid>
+        {form.title && (
+          <>
+            <h1>{form.title}</h1>
+            {form.description && (
+              <p style={{ fontSize: ".8rem" }}>{form.description}</p>
+            )}
+          </>
+        )}
+        <Questions />
+        <Button sx={{ px: 3 }} variant="contained" type="submit">
+          Submit
+        </Button>
       </Box>
-    </Box>
+    </GoogleFormProvider>
   );
 };
 
