@@ -1,6 +1,6 @@
 import React from "react";
 import { GoogleFormProvider, useGoogleForm } from "react-google-forms-hooks";
-import form from "../scripts/form.json";
+import form from "../scripts/enroll_form.json";
 import DropdownInput from "../components/DropDown";
 import ShortAnswerInput from "../components/ShortAnswer";
 import LongAnswerInput from "../components/LongAnswer";

@@ -11,10 +11,9 @@ const saveJsonToFile = (filename, json) => {
 
 const run = async () => {
   const result = await googleFormsToJson(
-    "https://docs.google.com/forms/d/e/1FAIpQLSeqc80efdn1iNiPZFPyyGyfrkRVTJzd7YsRg2TPXzX_5qS3qQ/viewform"
+    "https://docs.google.com/forms/d/e/1FAIpQLScEmXzKZUAfbYl5ENCYmYxVrf4omDHdmAoKzZY9Z8vgb1ilxw/viewform"
   );
-  saveJsonToFile("form.json", result);
-  console.log(result.fields);
+  saveJsonToFile("newsletter_form.json", result);
+  console.log("Done!");
 };
-
 run();

@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, Button, Grid, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
+import Newsletter from "./Newsletter";
 
 const BottomNav = () => {
   return (
@@ -83,15 +84,8 @@ const BottomNav = () => {
               style={{ fontSize: "20px", margin: "5px" }}
             />
           </Grid>
-          <Grid
-            item
-            xs={12}
-            md={3}
-            component="form"
-            action="https://formspree.io/f/xeqbvyag"
-            method="POST"
-          >
-            <TextField
+          <Grid item xs={12} md={3}>
+            {/* <TextField
               helperText="Subscribe to our newsletter"
               label="Enter your email"
               variant="outlined"
@@ -101,7 +95,8 @@ const BottomNav = () => {
             />
             <Button type="submit" sx={{ m: 1 }} variant="contained">
               Subscribe
-            </Button>
+            </Button> */}
+            <Newsletter />
           </Grid>
         </Grid>
         <Divider sx={{ mx: { md: 7, xs: 2 } }} orientation="horizontal" />

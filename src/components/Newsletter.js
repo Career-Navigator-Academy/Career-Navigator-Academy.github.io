@@ -1,9 +1,9 @@
 import React from "react";
 import { GoogleFormProvider, useGoogleForm } from "react-google-forms-hooks";
-import form from "../scripts/contact_form.json";
-import DropdownInput from "../components/DropDown";
-import ShortAnswerInput from "../components/ShortAnswer";
-import LongAnswerInput from "../components/LongAnswer";
+import form from "../scripts/newsletter_form.json";
+import DropdownInput from "./DropDown";
+import ShortAnswerInput from "./ShortAnswer";
+import LongAnswerInput from "./LongAnswer";
 import { Box, Button, Typography } from "@mui/material";
 
 const Questions = () => {
@@ -41,7 +41,7 @@ const Questions = () => {
   );
 };
 
-const Contact = () => {
+const Newsletter = () => {
   const methods = useGoogleForm({ form });
   const onSubmit = async (data) => {
     console.log(">>> Here is the data", data);
@@ -62,17 +62,17 @@ const Contact = () => {
         component="form"
         method="POST"
         onSubmit={methods.handleSubmit(onSubmit)}
-        sx={{ px: { md: 25, xs: 2 }, py: { md: 15, xs: 5 }, mb: 10 }}
       >
-        {form.title && (
+        {/* {form.title && (
           <>
             <h1>{form.title}</h1>
             {form.description && (
               <p style={{ fontSize: ".8rem" }}>{form.description}</p>
             )}
           </>
-        )}
+        )} */}
         <Questions />
+        <Typography variant="body2">Subscribe to our newsletter</Typography>
         <Button sx={{ px: 3 }} variant="contained" type="submit">
           Submit
         </Button>
@@ -81,4 +81,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Newsletter;
