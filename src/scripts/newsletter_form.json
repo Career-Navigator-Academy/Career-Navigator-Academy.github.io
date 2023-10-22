@@ -1,1 +1,18 @@
-{"fvv":1,"pageHistory":0,"fbzx":"3800307232909925627","action":"e/1FAIpQLScEmXzKZUAfbYl5ENCYmYxVrf4omDHdmAoKzZY9Z8vgb1ilxw","title":null,"description":null,"fields":[{"label":"email","description":null,"type":"SHORT_ANSWER","id":"609606526","required":false}],"fieldsOrder":{"609606526":0}}
+{
+  "fvv": 1,
+  "pageHistory": 0,
+  "fbzx": "3800307232909925627",
+  "action": "e/1FAIpQLScEmXzKZUAfbYl5ENCYmYxVrf4omDHdmAoKzZY9Z8vgb1ilxw",
+  "title": null,
+  "description": null,
+  "fields": [
+    {
+      "label": "email",
+      "description": null,
+      "type": "SHORT_ANSWER",
+      "id": "609606526",
+      "required": true
+    }
+  ],
+  "fieldsOrder": { "609606526": 0 }
+}

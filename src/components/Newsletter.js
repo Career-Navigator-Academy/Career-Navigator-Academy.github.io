@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { GoogleFormProvider, useGoogleForm } from "react-google-forms-hooks";
 import form from "../scripts/newsletter_form.json";
 import DropdownInput from "./DropDown";
 import ShortAnswerInput from "./ShortAnswer";
 import LongAnswerInput from "./LongAnswer";
 import { Box, Button, Typography } from "@mui/material";
+import NewsletterAlert from "./NewsletterAlert";
 
 const Questions = () => {
   return (
@@ -43,10 +44,14 @@ const Questions = () => {
 
 const Newsletter = () => {
   const methods = useGoogleForm({ form });
+  const [showCustomPage, setShowCustomPage] = useState(false);
+
   const onSubmit = async (data) => {
     console.log(">>> Here is the data", data);
     await methods.submitToGoogleForms(data);
-    alert("Form submitted with success!");
+
+    // Show the custom page after submission
+    setShowCustomPage(true);
 
     // Reset the form after submission
     methods.reset({
@@ -63,19 +68,18 @@ const Newsletter = () => {
         method="POST"
         onSubmit={methods.handleSubmit(onSubmit)}
       >
-        {/* {form.title && (
+        {showCustomPage ? (
+          // Display the custom page after submission
+          <NewsletterAlert />
+        ) : (
+          // Display the form
           <>
-            <h1>{form.title}</h1>
-            {form.description && (
-              <p style={{ fontSize: ".8rem" }}>{form.description}</p>
-            )}
+            <Questions />
+            <Button sx={{ px: 3 }} variant="contained" type="submit">
+              Submit
+            </Button>
           </>
-        )} */}
-        <Questions />
-        <Typography variant="body2">Subscribe to our newsletter</Typography>
-        <Button sx={{ px: 3 }} variant="contained" type="submit">
-          Submit
-        </Button>
+        )}
       </Box>
     </GoogleFormProvider>
   );

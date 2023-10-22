@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { GoogleFormProvider, useGoogleForm } from "react-google-forms-hooks";
 import form from "../scripts/contact_form.json";
 import DropdownInput from "../components/DropDown";
 import ShortAnswerInput from "../components/ShortAnswer";
 import LongAnswerInput from "../components/LongAnswer";
 import { Box, Button, Typography } from "@mui/material";
+import FormAlert from "../components/FormAlert";
 
 const Questions = () => {
   return (
@@ -43,10 +44,14 @@ const Questions = () => {
 
 const Contact = () => {
   const methods = useGoogleForm({ form });
+  const [showCustomPage, setShowCustomPage] = useState(false);
+
   const onSubmit = async (data) => {
     console.log(">>> Here is the data", data);
     await methods.submitToGoogleForms(data);
-    alert("Form submitted with success!");
+
+    // Show the custom page after submission
+    setShowCustomPage(true);
 
     // Reset the form after submission
     methods.reset({
@@ -72,10 +77,18 @@ const Contact = () => {
             )}
           </>
         )}
-        <Questions />
-        <Button sx={{ px: 3 }} variant="contained" type="submit">
-          Submit
-        </Button>
+        {showCustomPage ? (
+          // Display the custom page after submission
+          <FormAlert />
+        ) : (
+          // Display the form
+          <>
+            <Questions />
+            <Button sx={{ px: 3 }} variant="contained" type="submit">
+              Submit
+            </Button>
+          </>
+        )}
       </Box>
     </GoogleFormProvider>
   );

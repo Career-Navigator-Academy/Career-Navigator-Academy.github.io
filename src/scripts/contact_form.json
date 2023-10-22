@@ -11,21 +11,21 @@
       "description": null,
       "type": "SHORT_ANSWER",
       "id": "1002012228",
-      "required": false
+      "required": true
     },
     {
       "label": "Email",
       "description": null,
       "type": "SHORT_ANSWER",
       "id": "400837356",
-      "required": false
+      "required": true
     },
     {
       "label": "Message",
       "description": null,
       "type": "LONG_ANSWER",
       "id": "2095183966",
-      "required": false
+      "required": true
     }
   ],
   "fieldsOrder": { "400837356": 1, "1002012228": 0, "2095183966": 2 }
