@@ -19,6 +19,7 @@
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-forms-hooks": "^1.2.4",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
@@ -26,7 +27,7 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -53,5 +54,17 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
+  },
+  "description": "Welcome to the Career Navigator Academy website repository!",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Career-Navigator-Academy/Career-Navigator-Academy.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Career-Navigator-Academy/Career-Navigator-Academy.github.io/issues"
   }
 }

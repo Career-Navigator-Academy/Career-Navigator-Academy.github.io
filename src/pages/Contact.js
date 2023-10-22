@@ -1,64 +1,97 @@
-import { Box, Button, Grid, TextField, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
+import { GoogleFormProvider, useGoogleForm } from "react-google-forms-hooks";
+import form from "../scripts/contact_form.json";
+import DropdownInput from "../components/DropDown";
+import ShortAnswerInput from "../components/ShortAnswer";
+import LongAnswerInput from "../components/LongAnswer";
+import { Box, Button, Typography } from "@mui/material";
+import FormAlert from "../components/FormAlert";
 
-export default function Contact() {
+const Questions = () => {
   return (
-    <Box
-      sx={{ px: { md: 25, xs: 3 }, py: { md: 15, xs: 5 } }}
-      columnSpacing={8}
-    >
-      <Typography sx={{ p: 2 }}>
-        Do you have any suggestions, complaints, or requests? We value your
-        feedback, so please take a moment to complete the form below, and we
-        will promptly respond to your message.
-      </Typography>
-      <Grid
-        container
-        component="form"
-        action="https://formspree.io/f/xvojdegl"
-        method="POST"
-      >
-        <Grid item md={6} xs={12} sx={{ p: 2 }}>
-          <TextField
-            label="Name"
-            variant="outlined"
-            name="name"
-            // value={formData.name}
-            // onChange={handleChange}
-            fullWidth
-            required
-          />
-        </Grid>
+    <div>
+      {form.fields.map((field) => {
+        const { id } = field;
 
-        <Grid item md={6} xs={12} sx={{ p: 2 }}>
-          <TextField
-            label="Email"
-            variant="outlined"
-            name="email"
-            // value={formData.name}
-            // onChange={handleChange}
-            fullWidth
-            required
-          />
-        </Grid>
+        let questionInput = null;
+        switch (field.type) {
+          case "SHORT_ANSWER":
+            questionInput = <ShortAnswerInput id={id} />;
+            break;
+          case "LONG_ANSWER":
+            questionInput = <LongAnswerInput id={id} />;
+            break;
+          case "DROPDOWN":
+            questionInput = <DropdownInput id={id} />;
+            break;
+        }
 
-        <Grid item md={12} xs={12} sx={{ p: 2 }}>
-          <TextField
-            label="Message"
-            variant="outlined"
-            name="message"
-            // value={formData.name}
-            // onChange={handleChange}
-            fullWidth
-            required
-            multiline
-            rows={4}
-          />
-        </Grid>
-        <Button type="submit" sx={{ ml: 2 }} variant="contained">
-          Submit
-        </Button>
-      </Grid>
-    </Box>
+        if (!questionInput) {
+          return null;
+        }
+
+        return (
+          <Box key={id}>
+            <Typography variant="p">{field.label}</Typography>
+            {questionInput}
+            <Typography variant="p">{field.description}</Typography>
+          </Box>
+        );
+      })}
+    </div>
   );
-}
+};
+
+const Contact = () => {
+  const methods = useGoogleForm({ form });
+  const [showCustomPage, setShowCustomPage] = useState(false);
+
+  const onSubmit = async (data) => {
+    console.log(">>> Here is the data", data);
+    await methods.submitToGoogleForms(data);
+
+    // Show the custom page after submission
+    setShowCustomPage(true);
+
+    // Reset the form after submission
+    methods.reset({
+      data: {},
+    });
+  };
+
+  console.log(">>> Here are the errors!!!", methods.formState.errors);
+
+  return (
+    <GoogleFormProvider {...methods}>
+      <Box
+        component="form"
+        method="POST"
+        onSubmit={methods.handleSubmit(onSubmit)}
+        sx={{ px: { md: 25, xs: 2 }, py: { md: 15, xs: 5 }, mb: 10 }}
+      >
+        {form.title && (
+          <>
+            <h1>{form.title}</h1>
+            {form.description && (
+              <p style={{ fontSize: ".8rem" }}>{form.description}</p>
+            )}
+          </>
+        )}
+        {showCustomPage ? (
+          // Display the custom page after submission
+          <FormAlert />
+        ) : (
+          // Display the form
+          <>
+            <Questions />
+            <Button sx={{ px: 3 }} variant="contained" type="submit">
+              Submit
+            </Button>
+          </>
+        )}
+      </Box>
+    </GoogleFormProvider>
+  );
+};
+
+export default Contact;

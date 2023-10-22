@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { GoogleFormProvider, useGoogleForm } from "react-google-forms-hooks";
-import form from "../scripts/enroll_form.json";
-import DropdownInput from "../components/DropDown";
-import ShortAnswerInput from "../components/ShortAnswer";
-import LongAnswerInput from "../components/LongAnswer";
+import form from "../scripts/newsletter_form.json";
+import DropdownInput from "./DropDown";
+import ShortAnswerInput from "./ShortAnswer";
+import LongAnswerInput from "./LongAnswer";
 import { Box, Button, Typography } from "@mui/material";
-import FormAlert from "../components/FormAlert";
+import NewsletterAlert from "./NewsletterAlert";
 
 const Questions = () => {
   return (
@@ -42,7 +42,7 @@ const Questions = () => {
   );
 };
 
-const Enroll = () => {
+const Newsletter = () => {
   const methods = useGoogleForm({ form });
   const [showCustomPage, setShowCustomPage] = useState(false);
 
@@ -67,19 +67,10 @@ const Enroll = () => {
         component="form"
         method="POST"
         onSubmit={methods.handleSubmit(onSubmit)}
-        sx={{ px: { md: 25, xs: 2 }, py: { md: 15, xs: 5 }, mb: 10 }}
       >
-        {form.title && (
-          <>
-            <h1>{form.title}</h1>
-            {form.description && (
-              <p style={{ fontSize: ".8rem" }}>{form.description}</p>
-            )}
-          </>
-        )}
         {showCustomPage ? (
           // Display the custom page after submission
-          <FormAlert />
+          <NewsletterAlert />
         ) : (
           // Display the form
           <>
@@ -94,4 +85,4 @@ const Enroll = () => {
   );
 };
 
-export default Enroll;
+export default Newsletter;
