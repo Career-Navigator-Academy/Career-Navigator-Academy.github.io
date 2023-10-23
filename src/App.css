@@ -34,10 +34,6 @@ background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
   background: #667db6;  
 background: -webkit-linear-gradient(to right, #bfcef5, #0082c8, #0082c8, #667db6); 
 background: linear-gradient(to right, #0082c8, #0A77C1); 
-
-/* background-image: url(../src/resources/blob.svg);
-background-repeat: no-repeat;
-background-size: cover; */
 }
 
 .why{
@@ -47,7 +43,6 @@ background-size: cover; */
   position: relative;
 }
 
-/* Add an overlay using the ::before pseudo-element */
 .why::before {
   content: "";
   position: absolute;
@@ -55,7 +50,7 @@ background-size: cover; */
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00081fcf; /* Adjust the overlay color and opacity */
+  background-color: #00081fcf; 
 }
 
 .contained {
@@ -86,7 +81,7 @@ background-size: cover; */
 }
 
 .card {
-  height: 280px;
+  /* height: 280px; */
   background-color: #f0f1fc !important;
 }
 
@@ -104,15 +99,11 @@ background-size: cover; */
 }
 
 .path {
-  background: #E0EAFC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #E0EAFC; 
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
   
 }
-
-/* .cardtext{
-  background-color: #000428c2;
-} */
 
 .text {
   color: transparent;
@@ -126,19 +117,6 @@ background-size: cover; */
   border-radius: 50%;
   padding: 10px;
 }
-
-/* .footer {
-  background: #012149;  
-  color: #ECE9E6;
-} */
-
-/* Product Page */
-
-/* .pp {
-  background: #4CA1AF; 
-  background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF); 
-  background: linear-gradient(to right, #C4E0E5, #4CA1AF); 
-} */
 
 .div{
   animation: glitch 1s linear infinite;
@@ -212,7 +190,6 @@ border-radius: 10px;
 }
 
 .partner{
-  /* background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%) !important; */
   background-image: url(./resources/hats.jpeg);
   background-size: cover;
   position: relative;
@@ -227,5 +204,6 @@ border-radius: 10px;
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #000000a1; /* Adjust the overlay color and opacity */
+  background-color: #0c1946ca; 
 }
+
