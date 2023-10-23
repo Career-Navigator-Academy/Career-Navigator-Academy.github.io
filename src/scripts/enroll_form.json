@@ -60,7 +60,7 @@
       "required": true
     },
     {
-      "label": "How did you ear about us?",
+      "label": "How did you hear about us?",
       "description": null,
       "type": "DROPDOWN",
       "id": "1883685728",

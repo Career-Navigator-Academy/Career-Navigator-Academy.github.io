@@ -99,7 +99,7 @@ export default function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {["Products", "Programs", "Resources", "Contact"].map(
+              {["Products", "Programs", "Resources", "News", "Contact"].map(
                 (page, index) => (
                   <MenuItem key={index} onClick={handleCloseNavMenu}>
                     <Link
@@ -153,7 +153,7 @@ export default function NavBar() {
               ms: "auto",
             }}
           >
-            {["Products", "Programs", "Resources", "Contact"].map(
+            {["Products", "Programs", "Resources", "News", "Contact"].map(
               (page, index) => (
                 <Link
                   key={index}

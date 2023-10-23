@@ -75,6 +75,7 @@ const Newsletter = () => {
           // Display the form
           <>
             <Questions />
+            <Typography variant="body2">Subscribe to our newsletter</Typography>
             <Button sx={{ px: 3 }} variant="contained" type="submit">
               Submit
             </Button>

@@ -14,6 +14,7 @@ import NavBar from "./components/AppBar";
 import BottomNav from "./components/Footer";
 import FirstArticle from "./articles/FirstArticle";
 import Loader from "./components/Loader";
+import News from "./pages/News";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,7 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/products" element={<Products />} />
             <Route path="/programs" element={<Programs />} />
+            <Route path="/news" element={<News />} />
             <Route path="/partner" element={<Partner />} />
             <Route path="/apply" element={<Enroll />} />
             <Route path="/resources" element={<Resources />} />
