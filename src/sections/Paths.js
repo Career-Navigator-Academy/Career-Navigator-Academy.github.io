@@ -5,7 +5,6 @@ import {
   Grid,
   Button,
   Card,
-  CardMedia,
   CardHeader,
   CardContent,
   CardActions,
@@ -30,7 +29,7 @@ export default function Paths() {
       </Typography>
 
       <Grid container columnSpacing={2} justifyContent="center" paddingTop={7}>
-        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+        <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -69,7 +68,7 @@ export default function Paths() {
             </Card>
           </motion.div>
         </Grid>
-        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+        <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -108,7 +107,7 @@ export default function Paths() {
             </Card>
           </motion.div>
         </Grid>
-        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+        <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -147,7 +146,7 @@ export default function Paths() {
             </Card>
           </motion.div>
         </Grid>
-        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+        <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -185,7 +184,7 @@ export default function Paths() {
             </Card>
           </motion.div>
         </Grid>
-        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+        <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <motion.div
             initial="hidden"
             whileInView="visible"

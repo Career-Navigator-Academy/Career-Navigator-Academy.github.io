@@ -71,7 +71,7 @@ const DonateForm = () => {
         component="form"
         method="POST"
         onSubmit={methods.handleSubmit(onSubmit)}
-        sx={{ px: { md: 25, xs: 2 }, py: { md: 15, xs: 5 }, mb: 10 }}
+        sx={{ px: { md: 25, sm: 10, xs: 2 }, py: { md: 15, xs: 5 }, mb: 10 }}
       >
         {form.title && (
           <>

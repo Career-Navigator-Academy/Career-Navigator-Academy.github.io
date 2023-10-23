@@ -73,6 +73,18 @@ const Enroll = () => {
         onSubmit={methods.handleSubmit(onSubmit)}
         sx={{ px: { md: 25, xs: 2 }, py: { md: 15, xs: 5 }, mb: 10 }}
       >
+        <Box>
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: 500,
+
+              mb: 5,
+            }}
+          >
+            Apply
+          </Typography>
+        </Box>
         {form.title && (
           <>
             <h1>{form.title}</h1>

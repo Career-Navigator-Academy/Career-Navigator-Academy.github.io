@@ -30,6 +30,7 @@ export default function NavBar() {
         sx={{
           pt: { md: 2, xs: 0 },
           px: { md: 17, xs: 0 },
+          width: "100%",
         }}
       >
         <Toolbar disableGutters>
