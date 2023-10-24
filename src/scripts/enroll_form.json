@@ -67,13 +67,12 @@
       "options": [
         { "label": "Friend/ family" },
         { "label": "Our alumni" },
-        { "label": "Social media" },
-        { "label": "Other" }
+        { "label": "Social media" }
       ],
       "required": true
     },
     {
-      "label": "Why should we accept u into the program?",
+      "label": "Why should we accept you into the program?",
       "description": null,
       "type": "LONG_ANSWER",
       "id": "84614385",
