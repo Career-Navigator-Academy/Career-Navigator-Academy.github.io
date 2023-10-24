@@ -5,8 +5,8 @@ import DropdownInput from "../components/DropDown";
 import ShortAnswerInput from "../components/ShortAnswer";
 import LongAnswerInput from "../components/LongAnswer";
 import { Box, Button, Typography } from "@mui/material";
-import FormAlert from "../components/FormAlert";
 import Loader from "../components/Loader";
+import EnrollFormAlert from "../components/EnrollFormAlert";
 
 const Questions = () => {
   return (
@@ -95,7 +95,7 @@ const Enroll = () => {
         )}
         {showCustomPage ? (
           // Display the custom page after submission
-          <FormAlert />
+          <EnrollFormAlert />
         ) : (
           // Display the form or loader while submitting
           <>
