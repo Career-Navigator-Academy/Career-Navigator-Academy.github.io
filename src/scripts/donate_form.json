@@ -1,0 +1,43 @@
+{
+  "fvv": 1,
+  "pageHistory": 0,
+  "fbzx": "929924736661536792",
+  "action": "e/1FAIpQLSeN9LI6A68N43dcNDoJX_uOLctukQ6ffpA9XsJgptr4Rlw9oA",
+  "title": "Donate",
+  "description": null,
+  "fields": [
+    {
+      "label": "Name",
+      "description": null,
+      "type": "SHORT_ANSWER",
+      "id": "751684389",
+      "required": false
+    },
+    {
+      "label": "Email\n",
+      "description": null,
+      "type": "SHORT_ANSWER",
+      "id": "73065243",
+      "required": false
+    },
+    {
+      "label": "How do you want to support Career Navigator Academy?",
+      "description": null,
+      "type": "DROPDOWN",
+      "id": "284617997",
+      "options": [
+        { "label": "Sponsor participant" },
+        { "label": "Buy a laptop for a participant" },
+        { "label": "Pay volunteer" },
+        { "label": "Maintain our infrastructure" },
+        { "label": "Sponsor an event" }
+      ],
+      "required": true
+    }
+  ],
+  "fieldsOrder": {
+    "73065243": 1,
+    "284617997": 2,
+    "751684389": 0
+  }
+}

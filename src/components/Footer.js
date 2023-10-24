@@ -10,7 +10,7 @@ import {
   faGithub,
   faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { Box, Button, Grid, TextField } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import Newsletter from "./Newsletter";
 
@@ -85,17 +85,6 @@ const BottomNav = () => {
             />
           </Grid>
           <Grid item xs={12} md={3}>
-            {/* <TextField
-              helperText="Subscribe to our newsletter"
-              label="Enter your email"
-              variant="outlined"
-              name="subscribe"
-              required
-              fullWidth
-            />
-            <Button type="submit" sx={{ m: 1 }} variant="contained">
-              Subscribe
-            </Button> */}
             <Newsletter />
           </Grid>
         </Grid>
@@ -115,7 +104,7 @@ const BottomNav = () => {
             href="/"
             variant="p"
           >
-            2023 Career Navigator Academy
+            © {new Date().getFullYear()} Career Navigator Academy{" "}
           </Typography>
         </Box>
       </Box>

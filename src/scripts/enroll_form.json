@@ -60,20 +60,19 @@
       "required": true
     },
     {
-      "label": "How did you ear about us?",
+      "label": "How did you hear about us?",
       "description": null,
       "type": "DROPDOWN",
       "id": "1883685728",
       "options": [
         { "label": "Friend/ family" },
         { "label": "Our alumni" },
-        { "label": "Social media" },
-        { "label": "Other" }
+        { "label": "Social media" }
       ],
       "required": true
     },
     {
-      "label": "Why should we accept u into the program?",
+      "label": "Why should we accept you into the program?",
       "description": null,
       "type": "LONG_ANSWER",
       "id": "84614385",

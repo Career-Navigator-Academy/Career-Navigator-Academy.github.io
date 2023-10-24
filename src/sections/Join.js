@@ -51,7 +51,7 @@ export default function Join() {
               >
                 <img
                   src={third}
-                  alt="Your alt text here"
+                  alt="idea bulb"
                   style={{
                     width: "12%",
                   }}

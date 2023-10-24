@@ -1,5 +1,14 @@
 import React from "react";
-import { Box, Typography, Grid, Button, Card } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Grid,
+  Button,
+  Card,
+  CardHeader,
+  CardContent,
+  CardActions,
+} from "@mui/material";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -20,7 +29,7 @@ export default function Paths() {
       </Typography>
 
       <Grid container columnSpacing={2} justifyContent="center" paddingTop={7}>
-        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+        <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -31,24 +40,35 @@ export default function Paths() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Card className="card" sx={{ p: 5, color: "f4f4f4" }}>
-              <Typography variant="h6" sx={{ pb: 2 }}>
-                Software Engineering
-              </Typography>
-              <Typography sx={{ color: "#383838" }}>
-                Software engineering is the systematic process of designing,
-                developing, testing, and maintaining software applications and
-                systems.
-              </Typography>
-              <Link to="/apply">
-                <Button className="containedblack">
-                  Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-                </Button>
-              </Link>
+            <Card className="card" sx={{ p: 3 }}>
+              <CardHeader
+                title={
+                  <Typography variant="h6">Software Engineering</Typography>
+                }
+              />
+              <CardContent>
+                <Typography sx={{ color: "#383838" }}>
+                  Software engineering is the systematic process of designing,
+                  developing, testing, and maintaining software applications and
+                  systems.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Link to="/apply">
+                  <Button
+                    sx={{
+                      textTransform: "none",
+                      color: "#000",
+                    }}
+                  >
+                    Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                  </Button>
+                </Link>
+              </CardActions>
             </Card>
           </motion.div>
         </Grid>
-        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+        <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -59,24 +79,35 @@ export default function Paths() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Card className="card" sx={{ p: 5 }}>
-              <Typography variant="h6" sx={{ pb: 2 }}>
-                Front-End Development
-              </Typography>
-              <Typography sx={{ color: "#383838" }}>
-                Front-end development, often referred to as "client-side
-                development," is the practice of creating the user interface and
-                user experience of a website or web application.
-              </Typography>
-              <Link to="/apply">
-                <Button className="containedblack">
-                  Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-                </Button>
-              </Link>
+            <Card className="card" sx={{ p: 3 }}>
+              <CardHeader
+                title={
+                  <Typography variant="h6"> Front-End Development</Typography>
+                }
+              />
+              <CardContent>
+                <Typography sx={{ color: "#383838" }}>
+                  Front-end development, often referred to as "client-side
+                  development," is the practice of creating the user interface
+                  and user experience of a website or web application.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Link to="/apply">
+                  <Button
+                    sx={{
+                      textTransform: "none",
+                      color: "#000",
+                    }}
+                  >
+                    Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                  </Button>
+                </Link>
+              </CardActions>
             </Card>
           </motion.div>
         </Grid>
-        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+        <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -87,25 +118,35 @@ export default function Paths() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Card className="card" sx={{ p: 5 }}>
-              <Typography variant="h6" sx={{ pb: 2 }}>
-                Back-End Development
-              </Typography>
-              <Typography sx={{ color: "#383838" }}>
-                Back-end development is the part of software engineering that
-                deals with the server-side of applications, handling data,
-                logic, and infrastructure to make the front-end user interface
-                work seamlessly.
-              </Typography>
-              <Link to="/apply">
-                <Button className="containedblack">
-                  Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-                </Button>
-              </Link>
+            <Card className="card" sx={{ p: 3 }}>
+              <CardHeader
+                title={
+                  <Typography variant="h6">Back-End Development</Typography>
+                }
+              />
+              <CardContent>
+                <Typography sx={{ color: "#383838" }}>
+                  This part of software engineering deals with the server-side
+                  of applications, handling data, logic, and infrastructure to
+                  make the user interface work seamlessly.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Link to="/apply">
+                  <Button
+                    sx={{
+                      textTransform: "none",
+                      color: "#000",
+                    }}
+                  >
+                    Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                  </Button>
+                </Link>
+              </CardActions>
             </Card>
           </motion.div>
         </Grid>
-        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+        <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -116,25 +157,34 @@ export default function Paths() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Card className="card" sx={{ p: 5 }}>
-              <Typography variant="h6" sx={{ pb: 2 }}>
-                Technical Writing
-              </Typography>
-              <Typography sx={{ color: "#383838" }}>
-                Technical writing is a style of writing that simplifies complex
-                technical information for easy understanding by non-experts,
-                often used in manuals, reports, and guides across different
-                industries.
-              </Typography>
-              <Link to="/apply">
-                <Button className="containedblack">
-                  Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-                </Button>
-              </Link>
+            <Card className="card" sx={{ p: 3 }}>
+              <CardHeader
+                title={<Typography variant="h6">Technical Writing</Typography>}
+              />
+              <CardContent>
+                <Typography sx={{ color: "#383838" }}>
+                  Technical writing is a style of writing that simplifies
+                  complex technical information for easy understanding by
+                  non-experts, often used in manuals, reports, and guides across
+                  different industries.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Link to="/apply">
+                  <Button
+                    sx={{
+                      textTransform: "none",
+                      color: "#000",
+                    }}
+                  >
+                    Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                  </Button>
+                </Link>
+              </CardActions>
             </Card>
           </motion.div>
         </Grid>
-        <Grid item md={4} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
+        <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -145,20 +195,29 @@ export default function Paths() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Card className="card" sx={{ p: 5 }}>
-              <Typography variant="h6" sx={{ pb: 2 }}>
-                UI/UX{" "}
-              </Typography>
-              <Typography sx={{ color: "#383838" }}>
-                UI (User Interface) is the visual design of a digital product,
-                while UX (User Experience) focuses on optimizing the overall
-                user interaction and satisfaction with the product.
-              </Typography>
-              <Link to="/apply">
-                <Button className="containedblack">
-                  Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
-                </Button>
-              </Link>
+            <Card className="card" sx={{ p: 3 }}>
+              <CardHeader
+                title={<Typography variant="h6">UI/UX </Typography>}
+              />
+              <CardContent>
+                <Typography sx={{ color: "#383838" }}>
+                  UI (User Interface) is the visual design of a digital product,
+                  while UX (User Experience) focuses on optimizing the overall
+                  user interaction and satisfaction with the product.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Link to="/apply">
+                  <Button
+                    sx={{
+                      textTransform: "none",
+                      color: "#000",
+                    }}
+                  >
+                    Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                  </Button>
+                </Link>
+              </CardActions>
             </Card>
           </motion.div>
         </Grid>

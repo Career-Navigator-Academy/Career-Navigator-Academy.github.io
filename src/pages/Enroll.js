@@ -6,6 +6,7 @@ import ShortAnswerInput from "../components/ShortAnswer";
 import LongAnswerInput from "../components/LongAnswer";
 import { Box, Button, Typography } from "@mui/material";
 import FormAlert from "../components/FormAlert";
+import Loader from "../components/Loader";
 
 const Questions = () => {
   return (
@@ -45,8 +46,10 @@ const Questions = () => {
 const Enroll = () => {
   const methods = useGoogleForm({ form });
   const [showCustomPage, setShowCustomPage] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false); // State variable to track form submission
 
   const onSubmit = async (data) => {
+    setIsSubmitting(true); // Set isSubmitting to true when submitting
     console.log(">>> Here is the data", data);
     await methods.submitToGoogleForms(data);
 
@@ -57,6 +60,7 @@ const Enroll = () => {
     methods.reset({
       data: {},
     });
+    setIsSubmitting(false); // Set isSubmitting back to false after submission
   };
 
   console.log(">>> Here are the errors!!!", methods.formState.errors);
@@ -69,6 +73,18 @@ const Enroll = () => {
         onSubmit={methods.handleSubmit(onSubmit)}
         sx={{ px: { md: 25, xs: 2 }, py: { md: 15, xs: 5 }, mb: 10 }}
       >
+        <Box>
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: 500,
+
+              mb: 5,
+            }}
+          >
+            Apply
+          </Typography>
+        </Box>
         {form.title && (
           <>
             <h1>{form.title}</h1>
@@ -81,12 +97,16 @@ const Enroll = () => {
           // Display the custom page after submission
           <FormAlert />
         ) : (
-          // Display the form
+          // Display the form or loader while submitting
           <>
             <Questions />
-            <Button sx={{ px: 3 }} variant="contained" type="submit">
-              Submit
-            </Button>
+            {isSubmitting ? (
+              <Loader /> // Show the loader while submitting
+            ) : (
+              <Button sx={{ px: 3 }} variant="contained" type="submit">
+                Submit
+              </Button>
+            )}
           </>
         )}
       </Box>
