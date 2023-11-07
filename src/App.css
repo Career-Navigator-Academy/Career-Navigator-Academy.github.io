@@ -207,3 +207,6 @@ border-radius: 10px;
   background-color: #0c1946ca; 
 }
 
+a {
+  text-decoration: none !important;
+}

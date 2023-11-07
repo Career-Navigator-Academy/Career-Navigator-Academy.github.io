@@ -35,7 +35,7 @@ export default function News() {
               component="img"
               sx={{ width: 151 }}
               image={pic}
-              alt="Live from space album cover"
+              alt="Laptop"
             />
 
             <Box sx={{ display: "flex", flexDirection: "column" }}>
