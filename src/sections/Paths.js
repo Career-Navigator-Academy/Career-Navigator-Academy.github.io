@@ -4,7 +4,6 @@ import {
   Typography,
   Grid,
   Button,
-  Card,
   CardHeader,
   CardContent,
   CardActions,
@@ -40,10 +39,26 @@ export default function Paths() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Card className="card" sx={{ p: 3 }}>
+            <Box
+              className="card"
+              sx={{
+                p: 3,
+                borderRadius: 4,
+                background: "#DEE9FB !important",
+                boxShadow:
+                  "35px 35px 70px #bdc6d5, -35px -35px 70px #ffffff !important",
+              }}
+            >
+              <Box
+                component="img"
+                sx={{ borderRadius: "50%", width: "40%" }}
+                src="https://img.freepik.com/free-vector/content-structure-concept-illustration_114360-5252.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=ais"
+              />
               <CardHeader
                 title={
-                  <Typography variant="h6">Software Engineering</Typography>
+                  <Typography variant="h6">
+                    Full Stack Web Development
+                  </Typography>
                 }
               />
               <CardContent>
@@ -61,11 +76,11 @@ export default function Paths() {
                       color: "#000",
                     }}
                   >
-                    Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                    Learn More <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
                   </Button>
                 </Link>
               </CardActions>
-            </Card>
+            </Box>
           </motion.div>
         </Grid>
         <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
@@ -79,10 +94,27 @@ export default function Paths() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Card className="card" sx={{ p: 3 }}>
+            <Box
+              className="card"
+              sx={{
+                p: 3,
+                borderRadius: 4,
+                background: "#DEE9FB !important",
+                boxShadow:
+                  "35px 35px 70px #bdc6d5, -35px -35px 70px #ffffff !important",
+              }}
+            >
+              <Box
+                component="img"
+                sx={{ borderRadius: "50%", width: "60%" }}
+                src="https://img.freepik.com/free-vector/people-analyzing-growth-charts_23-2148866843.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=ais"
+              />
               <CardHeader
                 title={
-                  <Typography variant="h6"> Front-End Development</Typography>
+                  <Typography variant="h6">
+                    {" "}
+                    Data Analysis With Python
+                  </Typography>
                 }
               />
               <CardContent>
@@ -100,11 +132,11 @@ export default function Paths() {
                       color: "#000",
                     }}
                   >
-                    Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                    Learn More <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
                   </Button>
                 </Link>
               </CardActions>
-            </Card>
+            </Box>
           </motion.div>
         </Grid>
         <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
@@ -118,10 +150,24 @@ export default function Paths() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Card className="card" sx={{ p: 3 }}>
+            <Box
+              className="card"
+              sx={{
+                p: 3,
+                borderRadius: 4,
+                background: "#DEE9FB !important",
+                boxShadow:
+                  "35px 35px 70px #bdc6d5, -35px -35px 70px #ffffff !important",
+              }}
+            >
+              <Box
+                component="img"
+                sx={{ borderRadius: "50%", width: "40%" }}
+                src="https://img.freepik.com/free-vector/hand-drawn-flat-design-rpa-illustration_23-2149277643.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=ais"
+              />
               <CardHeader
                 title={
-                  <Typography variant="h6">Back-End Development</Typography>
+                  <Typography variant="h6">Machine Learning (ML)</Typography>
                 }
               />
               <CardContent>
@@ -139,11 +185,11 @@ export default function Paths() {
                       color: "#000",
                     }}
                   >
-                    Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                    Learn More <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
                   </Button>
                 </Link>
               </CardActions>
-            </Card>
+            </Box>
           </motion.div>
         </Grid>
         <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
@@ -157,9 +203,23 @@ export default function Paths() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Card className="card" sx={{ p: 3 }}>
+            <Box
+              // className="card"
+              sx={{
+                p: 3,
+                borderRadius: 4,
+                background: "#DEE9FB !important",
+                boxShadow:
+                  "35px 35px 70px #bdc6d5, -35px -35px 70px #ffffff !important",
+              }}
+            >
+              <Box
+                component="img"
+                sx={{ borderRadius: "45%", width: "40%" }}
+                src="https://img.freepik.com/free-vector/designer-concept-illustration_114360-4527.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=ais"
+              />
               <CardHeader
-                title={<Typography variant="h6">Technical Writing</Typography>}
+                title={<Typography variant="h6">UI Design</Typography>}
               />
               <CardContent>
                 <Typography sx={{ color: "#383838" }}>
@@ -177,11 +237,11 @@ export default function Paths() {
                       color: "#000",
                     }}
                   >
-                    Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                    Learn More <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
                   </Button>
                 </Link>
               </CardActions>
-            </Card>
+            </Box>
           </motion.div>
         </Grid>
         <Grid item md={4} sm={6} xs={12} sx={{ p: { md: 3, xs: 1 } }}>
@@ -195,9 +255,23 @@ export default function Paths() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <Card className="card" sx={{ p: 3 }}>
+            <Box
+              className="card"
+              sx={{
+                p: 3,
+                borderRadius: 4,
+                background: "#DEE9FB !important",
+                boxShadow:
+                  "35px 35px 70px #bdc6d5, -35px -35px 70px #ffffff !important",
+              }}
+            >
+              <Box
+                component="img"
+                sx={{ borderRadius: "50%", width: "40%" }}
+                src="https://img.freepik.com/free-vector/interaction-design-concept-illustration_114360-1432.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=ais"
+              />
               <CardHeader
-                title={<Typography variant="h6">UI/UX </Typography>}
+                title={<Typography variant="h6">UX Design</Typography>}
               />
               <CardContent>
                 <Typography sx={{ color: "#383838" }}>
@@ -214,11 +288,11 @@ export default function Paths() {
                       color: "#000",
                     }}
                   >
-                    Enroll <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
+                    Learn More <KeyboardDoubleArrowRightIcon sx={{ ml: 1 }} />
                   </Button>
                 </Link>
               </CardActions>
-            </Card>
+            </Box>
           </motion.div>
         </Grid>
       </Grid>

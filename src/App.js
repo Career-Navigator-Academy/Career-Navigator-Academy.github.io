@@ -18,6 +18,7 @@ import News from "./pages/News";
 import HireForm from "./Forms/HireForm";
 import DonateForm from "./Forms/DonateForm";
 import HostForm from "./Forms/HostForm";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,6 +42,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/programs" element={<Programs />} />
             <Route path="/news" element={<News />} />
+            <Route path="/about" element={<AboutUs />} />
             <Route path="/partner" element={<Partner />} />
             <Route path="/apply" element={<Enroll />} />
             <Route path="/resources" element={<Resources />} />

@@ -21,7 +21,7 @@ export default function Landing() {
           alignContent="center"
           display="flex"
           container
-          sx={{ px: { md: 5, xs: 3 } }}
+          sx={{ px: { md: 4, xs: 3 } }}
           columnSpacing={{ md: 2, sm: 2, xs: 0 }}
         >
           <Grid item md={4} sm={4} xs={12} justifyContent="center" my="auto">
@@ -41,7 +41,7 @@ export default function Landing() {
                 src={girl}
                 sx={{
                   width: { md: "90%", xs: "100%" },
-                  borderRadius: "35px",
+                  borderRadius: "10px",
                   ml: { md: 12, xs: 0 },
                   mt: { md: 3, xs: 3 },
                 }}
