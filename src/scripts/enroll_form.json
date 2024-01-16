@@ -62,13 +62,7 @@
         { "label": "Front-end Web Development" },
         { "label": "Back-end Web Development" },
         { "label": "Full-Stack Web Development" },
-        { "label": "UI Design" },
-        { "label": "UX Design" },
-        { "label": "Interaction Design" },
-        { "label": "Content Writing" },
-        { "label": "Copy-writing" },
-        { "label": "Technical Writing" },
-        { "label": "Creative Writing" },
+        { "label": "Machine Learning (ML)" },
         { "label": "Data Analysis (With Python)" }
       ],
       "required": true

@@ -57,19 +57,19 @@ export default function Paths() {
               <CardHeader
                 title={
                   <Typography variant="h6">
-                    Full Stack Web Development
+                    Full-Stack Web Development
                   </Typography>
                 }
               />
               <CardContent>
                 <Typography sx={{ color: "#383838" }}>
-                  Software engineering is the systematic process of designing,
-                  developing, testing, and maintaining software applications and
-                  systems.
+                  Full-stack developers need to be versatile, understanding both
+                  the user interface and experience (UI/UX) as well as the
+                  server-side logic and database management.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Link to="/apply">
+                <Link to="/path/full-stack-web-development">
                   <Button
                     sx={{
                       textTransform: "none",
@@ -119,13 +119,13 @@ export default function Paths() {
               />
               <CardContent>
                 <Typography sx={{ color: "#383838" }}>
-                  Front-end development, often referred to as "client-side
-                  development," is the practice of creating the user interface
-                  and user experience of a website or web application.
+                  Data analysis involves the inspection, cleansing,
+                  transformation, and modeling of data to uncover useful
+                  information, draw conclusions, and support decision-making.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Link to="/apply">
+                <Link to="/path/data-analysis">
                   <Button
                     sx={{
                       textTransform: "none",
@@ -172,13 +172,14 @@ export default function Paths() {
               />
               <CardContent>
                 <Typography sx={{ color: "#383838" }}>
-                  This part of software engineering deals with the server-side
-                  of applications, handling data, logic, and infrastructure to
-                  make the user interface work seamlessly.
+                  Machine learning is a subset of artificial intelligence (AI)
+                  that focuses on the development of algorithms and statistical
+                  models enabling computers to perform tasks without explicit
+                  programming.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Link to="/apply">
+                <Link to="/path/machine-learning">
                   <Button
                     sx={{
                       textTransform: "none",
@@ -219,18 +220,22 @@ export default function Paths() {
                 src="https://img.freepik.com/free-vector/designer-concept-illustration_114360-4527.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=ais"
               />
               <CardHeader
-                title={<Typography variant="h6">UI Design</Typography>}
+                title={
+                  <Typography variant="h6">
+                    Front-end web development
+                  </Typography>
+                }
               />
               <CardContent>
                 <Typography sx={{ color: "#383838" }}>
-                  Technical writing is a style of writing that simplifies
-                  complex technical information for easy understanding by
-                  non-experts, often used in manuals, reports, and guides across
-                  different industries.
+                  Front-end focuses on designing and developing the client-side
+                  of a website, ensuring that it is visually appealing,
+                  user-friendly, and responsive across various devices and
+                  browsers.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Link to="/apply">
+                <Link to="/path/front-end-web-development">
                   <Button
                     sx={{
                       textTransform: "none",
@@ -271,17 +276,19 @@ export default function Paths() {
                 src="https://img.freepik.com/free-vector/interaction-design-concept-illustration_114360-1432.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=ais"
               />
               <CardHeader
-                title={<Typography variant="h6">UX Design</Typography>}
+                title={
+                  <Typography variant="h6">Back-end web development</Typography>
+                }
               />
               <CardContent>
                 <Typography sx={{ color: "#383838" }}>
-                  UI (User Interface) is the visual design of a digital product,
-                  while UX (User Experience) focuses on optimizing the overall
-                  user interaction and satisfaction with the product.
+                  Back-end focuses on the server-side functionality, data
+                  management, and communication between the server and the
+                  front-end components.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Link to="/apply">
+                <Link to="/path/back-end-web-development">
                   <Button
                     sx={{
                       textTransform: "none",

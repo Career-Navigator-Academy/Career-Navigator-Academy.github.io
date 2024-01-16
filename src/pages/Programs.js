@@ -7,6 +7,7 @@ import prog from "../resources/freepik.jpg";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Paths from "../sections/Paths";
 
 export default function Programs() {
   return (
@@ -207,6 +208,7 @@ export default function Programs() {
           </Grid>
         </Grid>
       </Box>
+      <Paths />
     </Box>
   );
 }

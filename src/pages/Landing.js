@@ -11,6 +11,7 @@ import Paths from "../sections/Paths";
 import Ready from "../sections/Ready";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import FAQs from "../sections/FAQs";
 
 export default function Landing() {
   return (
@@ -124,6 +125,7 @@ export default function Landing() {
       <Paths />
       <Join />
       <Ready />
+      <FAQs />
     </Box>
   );
 }
