@@ -11,6 +11,7 @@ import Paths from "../sections/Paths";
 import Ready from "../sections/Ready";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import FAQs from "../sections/FAQs";
 
 export default function Landing() {
   return (
@@ -21,7 +22,7 @@ export default function Landing() {
           alignContent="center"
           display="flex"
           container
-          sx={{ px: { md: 5, xs: 3 } }}
+          sx={{ px: { md: 4, xs: 3 } }}
           columnSpacing={{ md: 2, sm: 2, xs: 0 }}
         >
           <Grid item md={4} sm={4} xs={12} justifyContent="center" my="auto">
@@ -41,7 +42,7 @@ export default function Landing() {
                 src={girl}
                 sx={{
                   width: { md: "90%", xs: "100%" },
-                  borderRadius: "35px",
+                  borderRadius: "10px",
                   ml: { md: 12, xs: 0 },
                   mt: { md: 3, xs: 3 },
                 }}
@@ -124,6 +125,7 @@ export default function Landing() {
       <Paths />
       <Join />
       <Ready />
+      <FAQs />
     </Box>
   );
 }

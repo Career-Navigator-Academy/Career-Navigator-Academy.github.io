@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function EnrollFormAlert() {
   return (
-    <Box sx={{ px: { md: 25, xs: 2 }, py: { md: 10, xs: 5 } }}>
+    <Box sx={{ px: { md: 0, xs: 2 }, py: { md: 10, xs: 5 } }}>
       <Typography variant="h4" sx={{ mb: 3 }}>
         Thank you! your form has been submitted successfully 🎉
       </Typography>

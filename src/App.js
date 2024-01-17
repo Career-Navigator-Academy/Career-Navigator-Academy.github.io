@@ -18,6 +18,12 @@ import News from "./pages/News";
 import HireForm from "./Forms/HireForm";
 import DonateForm from "./Forms/DonateForm";
 import HostForm from "./Forms/HostForm";
+import AboutUs from "./pages/AboutUs";
+import Frontend from "./Paths/Fe";
+import Backend from "./Paths/Be";
+import FullStack from "./Paths/FS";
+import DataAnalysis from "./Paths/Data";
+import MachineLearning from "./Paths/ML";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,6 +47,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/programs" element={<Programs />} />
             <Route path="/news" element={<News />} />
+            <Route path="/about" element={<AboutUs />} />
             <Route path="/partner" element={<Partner />} />
             <Route path="/apply" element={<Enroll />} />
             <Route path="/resources" element={<Resources />} />
@@ -48,6 +55,23 @@ function App() {
             <Route path="/partner/donate" element={<DonateForm />} />
             <Route path="/partner/host-an-event" element={<HostForm />} />
             <Route path="/contact" element={<Contact />} />
+            <Route
+              path="/path/front-end-web-development"
+              element={<Frontend />}
+            />
+            <Route
+              path="/path/back-end-web-development"
+              element={<Backend />}
+            />
+            <Route
+              path="/path/full-stack-web-development"
+              element={<FullStack />}
+            />
+            <Route path="/path/data-analysis" element={<DataAnalysis />} />
+            <Route
+              path="/path/machine-learning"
+              element={<MachineLearning />}
+            />
             <Route
               path="/navigating-the-software-development-galaxy"
               element={<FirstArticle />}
