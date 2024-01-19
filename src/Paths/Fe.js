@@ -12,7 +12,7 @@ function Frontend() {
           color: "#303030",
 
           py: { md: 7, xs: 5 },
-          px: { md: 15, xs: 2 },
+          px: { md: 15, xs: 2, lg: 25 },
         }}
       >
         <Box sx={{ py: 3 }}>

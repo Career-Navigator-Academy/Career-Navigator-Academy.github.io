@@ -14,7 +14,7 @@ function MachineLearning() {
           py: { md: 7, xs: 5 },
         }}
       >
-        <Box sx={{ py: 3, px: { md: 15, xs: 2 } }}>
+        <Box sx={{ py: 3, px: { md: 15, xs: 2, lg: 25 } }}>
           <Typography variant="h3" textAlign="center">
             Is Machine Learning (ML) the right choice for you? Let's get to know
             more.
@@ -175,7 +175,7 @@ function MachineLearning() {
           columnSpacing={4}
           rowSpacing={2}
           my={2}
-          sx={{ px: { md: 15, xs: 2 } }}
+          sx={{ px: { md: 15, xs: 2, lg: 25 } }}
         >
           <Grid item md={6} xs={12} my="auto">
             <Box

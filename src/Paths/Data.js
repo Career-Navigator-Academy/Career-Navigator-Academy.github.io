@@ -14,14 +14,14 @@ function DataAnalysis() {
           py: { md: 7, xs: 5 },
         }}
       >
-        <Box sx={{ py: 3, px: { md: 15, xs: 2 } }}>
+        <Box sx={{ py: 3, px: { md: 15, xs: 2, lg: 25 } }}>
           <Typography variant="h3" textAlign="center">
             Is Data Analysis (With Python) the right choice for you? Let's get
             to know more.
           </Typography>
         </Box>
 
-        <Box sx={{ py: 4, px: { md: 15, xs: 2 } }} textAlign="center">
+        <Box sx={{ py: 4, px: { md: 15, xs: 2, lg: 25 } }} textAlign="center">
           <Typography variant="p">
             Data analysis involves the inspection, cleansing, transformation,
             and modeling of data to uncover useful information, draw
@@ -31,7 +31,7 @@ function DataAnalysis() {
           </Typography>
         </Box>
 
-        <Box sx={{ p: { md: 10, xs: 2 }, bgcolor: "#E5B769" }}>
+        <Box sx={{ p: { md: 10, xs: 2, lg: 20 }, bgcolor: "#E5B769" }}>
           <Typography
             variant="h5"
             textAlign="center"
@@ -180,7 +180,7 @@ function DataAnalysis() {
           columnSpacing={4}
           rowSpacing={2}
           my={2}
-          sx={{ px: { md: 15, xs: 2 } }}
+          sx={{ px: { md: 15, xs: 2, lg: 25 } }}
         >
           <Grid item md={6} xs={12} my="auto">
             <Box

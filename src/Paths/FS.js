@@ -14,14 +14,14 @@ function FullStack() {
           py: { md: 7, xs: 5 },
         }}
       >
-        <Box sx={{ py: 3, px: { md: 15, xs: 2 } }}>
+        <Box sx={{ py: 3, px: { md: 15, xs: 2, lg: 25 } }}>
           <Typography variant="h3" textAlign="center">
             Is Full-Stack Web Development the right choice for you? Let's get to
             know more.
           </Typography>
         </Box>
 
-        <Box sx={{ py: 4, px: { md: 15, xs: 2 } }} textAlign="center">
+        <Box sx={{ py: 4, px: { md: 15, xs: 2, lg: 25 } }} textAlign="center">
           <Typography variant="p">
             Full-stack web development refers to the practice of working with
             both the front-end (client-side) and back-end (server-side) of a web
@@ -33,7 +33,7 @@ function FullStack() {
           </Typography>
         </Box>
 
-        <Box sx={{ p: { md: 10, xs: 2 }, bgcolor: "#9CFC97" }}>
+        <Box sx={{ p: { md: 10, xs: 2, lg: 20 }, bgcolor: "#9CFC97" }}>
           <Typography
             variant="h5"
             textAlign="center"
@@ -158,7 +158,7 @@ function FullStack() {
           columnSpacing={4}
           rowSpacing={2}
           my={2}
-          sx={{ px: { md: 15, xs: 2 } }}
+          sx={{ px: { md: 15, xs: 2, lg: 25 } }}
         >
           <Grid item md={6} xs={12} my="auto">
             <Box
