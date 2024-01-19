@@ -33,7 +33,7 @@ function FAQs() {
   ];
 
   return (
-    <Box sx={{ px: { md: 15, xs: 3 }, bgcolor: "#DCE7FA", py: 3 }}>
+    <Box sx={{ px: { md: 15, xs: 3, lg: 25 }, bgcolor: "#DCE7FA", py: 3 }}>
       <Typography variant="h6" sx={{ py: 3 }} textAlign="center">
         Frequently Asked Questions
       </Typography>
